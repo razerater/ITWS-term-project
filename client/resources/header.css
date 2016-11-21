@@ -1,0 +1,56 @@
+body {
+	margin: 0;
+}
+#head {
+	font-family: Arial;
+	height: 150px;
+	border-bottom: solid black 2px;
+}
+#logo {
+	float: left;
+	width: 25%;
+	height: 150px;
+	background-color: red;
+}
+#head-top {
+	float: left;
+	clear: right;
+	width: 75%;
+	background-color: #89CFF0;
+	margin: 0 auto;
+	/*border-bottom: 2px solid black;*/
+}
+#head-top nav {
+	width: 85%;
+	margin: 0 auto;
+	color: #EEE;
+}
+#head-top ul {
+	padding: 30px 20px 55px 20px;
+	margin: 0;
+}
+#head-top ul li {
+	float: left;
+	font-size: 1.5em;
+	text-align: center;
+	list-style-type: none;
+	margin: 0 25px 0 25px;
+}
+#head-top ul li.vbar {
+	margin-top: -2px;
+}
+#head-top ul li a {
+	color: #EEE;
+	text-decoration: none;
+}
+#head-bottom {
+	height: 80%;
+	text-align: center;
+	padding-bottom: 0;
+}
+#slogan {
+	position: relative;
+	top: 22px;
+	font-style: italic;
+	font-size: 1.2em;
+}
