@@ -1,0 +1,129 @@
+body {
+	margin: 0;
+}
+#head {
+	font-family: Arial;
+	height: 150px;
+	border-bottom: solid black 2px;
+}
+#logo {
+	float: left;
+	width: 25%;
+	height: 150px;
+	background-color: red;
+}
+#head-top {
+	float: left;
+	clear: right;
+	width: 75%;
+	background-color: #89CFF0;
+	margin: 0 auto;
+	/*border-bottom: 2px solid black;*/
+}
+#head-top nav {
+	width: 85%;
+	margin: 0 auto;
+	color: #EEE;
+}
+#head-top ul {
+	padding: 30px 20px 55px 20px;
+	margin: 0;
+}
+#head-top ul li {
+	float: left;
+	font-size: 1.5em;
+	text-align: center;
+	list-style-type: none;
+	margin: 0 25px 0 25px;
+}
+#head-top ul li.vbar {
+	margin-top: -2px;
+}
+#head-top ul li a {
+	color: #EEE;
+	text-decoration: none;
+}
+#head-bottom {
+	height: 80%;
+	text-align: center;
+	padding-bottom: 0;
+}
+#slogan {
+	position: relative;
+	top: 22px;
+	font-style: italic;
+	font-size: 1.2em;
+}
+
+
+.login-centered{
+	padding-top: 100px;
+  max-width:500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login-loginInfo{
+	border: medium solid;
+	padding-bottom: 10px;
+	margin:0;
+	border-radius: 10px;
+	width:500px;
+}
+.login-type{
+	float: left;
+	margin: 0 5px 5px 5px;
+	padding: 5px 0 5px 0;
+	width: 239px;
+	font-size: 30px;
+	border-bottom: thin solid;
+	border-right:thin solid;
+}
+.login-material{
+	width: 500px;
+	padding: 20px 10px 0 10px;
+}
+.login-field {
+  width: 90px;
+  margin: 0;
+  float: left;
+  text-align: left;
+  font-size: 20px;
+}
+.login-value {
+  margin: 0.5em 0 1em 0;
+  height: 25px;
+}
+fieldset{
+	border: none;
+}
+#login-login{
+	padding: 0 15px 0 15px;
+	font-size: 2em;
+	float: right;
+}
+#login-registerNow{
+	display: inline;
+	padding: 0 10px 0 10px;
+	margin-right: 13px;
+	font-size: 1em;
+	float: right;
+	text-align: right;
+}
+p.login-registerNowText{
+	margin: 0 30px 0 0;
+	padding: 0;
+	display:inline-block;
+	font-size: 15px;
+	text-align: right;
+	width: 325px;
+}
+
+#login-goBack{
+	text-align: center;
+	border-top: thin solid;
+	margin-top: 10px;
+	padding: 5px 0 0 0;
+	font-size: 20px;
+	width: 500px;
+}
