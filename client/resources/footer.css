@@ -1,0 +1,41 @@
+#foot {
+	font-family: Arial;
+	
+	border-top: solid black 2px;
+	background-color: #89CFF0;
+	/* credit to http://54.67.6.95/how-to-keep-footer-at-bottom-of-page-with-css/ for footer position*/
+	width:100%;
+	height:100px;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+
+#footTop {
+
+
+	width: 30%;
+	background-color: white;
+	margin: auto;
+	background-color: #89CFF0;
+
+}
+
+.footLink{
+	font-family: Arial;
+	color: #EEE;
+	font-size: 1em;
+	/*change stuff here */
+}
+.footLink:hover {
+	font-family: Arial;
+	color: red;
+	font-size: 1em;
+}
+#copyright{
+	padding-top: 30px;
+	width: 9%;
+	margin: auto; 
+	font-size: 0.9em;
+	background-color: #89CFF0;
+}

@@ -1,0 +1,16 @@
+body{
+	font-family: Arial; 
+}
+
+#logo {
+	float: left;
+	width: 20%;
+	height: 100px;
+	background-color: red;
+}
+
+#headSearch{
+	width: 20%;
+	height: 100px;
+	background-color: #eee;
+}

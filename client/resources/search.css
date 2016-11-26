@@ -1,0 +1,35 @@
+#header h2{
+	margin: 0; 
+	font-family: Arial;
+	font-size: 2.6em;
+}
+
+#firstSearch{
+	margin-left: auto; 
+	margin-right: auto;
+	width: 50%;
+	margin-top: 7%;
+}
+
+.field {
+  width: 120px;
+  margin: 0 0.5em 0.5em 0;
+  float: left;
+  clear: left;
+  text-align: right;
+}
+
+#resultTable table, th, td{
+	border-top: 2px solid black; 
+	border-bottom: 2px solid black; 
+	border-collapse: collapse; 
+	font-size: 25px;
+}
+
+#resultTable table{
+	width: 100%; 
+}
+
+#resultTable td{
+	text-align: center; 
+}
