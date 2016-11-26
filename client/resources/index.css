@@ -1,0 +1,47 @@
+#main {
+	font-family: Arial;
+	width: 100%;
+	height: 75%;
+}
+#partners {
+	margin-left: 30px;
+}
+#main img {
+	position: absolute;
+}
+#adidas {
+	left: 20px;
+	top: 230px;
+}
+#intel {
+	left: 55px;
+	top: 410px;
+}
+#starbucks {
+	left: 340px;
+	top: 420px; /* ayy */
+}
+#google {
+	left: 235px;
+	top: 200px;
+}
+#toyota {
+	left: 510px;
+	top: 180px;
+}
+#dell {
+	left: 610px;
+	top: 400px;
+}
+#bp {
+	left: 825px;
+	top: 195px;
+}
+#apple {
+	left: 860px;
+	top: 390px;
+}
+#lego {
+	left: 1090px;
+	top: 340px;
+}
