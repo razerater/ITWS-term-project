@@ -1,0 +1,56 @@
+.applyID-centered{
+	margin-top: 100px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border: medium solid;
+	padding-bottom: 10px;
+	border-radius: 10px;
+	margin-bottom: 100px
+}
+.applyID-type{
+	margin: 0 5px 5px 5px;
+	padding: 5px 0 5px 10px;
+	font-size: 30px;
+	border-bottom: thin solid;
+}
+.applyID-material{
+	width: 500px;
+	padding: 20px 10px 0 10px;
+}
+.applyID-field{
+  width: 250px;
+  margin: 0;
+  float: left;
+  text-align: left;
+  font-size: 20px;
+}
+.applyID-value{
+  margin: 0.5em 0 1em 0;
+  height: 25px;
+}
+fieldset{
+	border: none;
+}
+#applyID-applyID{
+	padding: 5px 20px 5px 20px;
+	font-size: 1em;
+	float: right;
+	clear: right;
+	margin-top: 0.5em;
+	background-color: #3793d9;
+	color: white;
+	border: none;
+}
+input.applyID{
+	display: inline;
+	font-size: 15px;
+	width: 20em;
+	background-color: lightgrey;
+	border: solid #436a86;
+}
+textarea#applyIDQuestion{
+	font-size: 15px;
+	background-color: lightgrey;
+	border: solid #436a86;
+}

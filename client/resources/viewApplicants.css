@@ -1,0 +1,50 @@
+.viewApp{
+	padding: 50px 100px 50px 100px;
+}
+.viewApp-appbox{
+	display: inline;
+	float: left;
+	margin: 50px;
+	border: black solid thin;
+	border-radius: 10px;
+	padding: 5px;
+	width: 300px;
+	height: 140px;
+}
+img.viewApp-profilePic{
+	display: inline;
+	float: left;
+	max-width: 50px;
+	height: auto;
+	padding: 0;
+	margin: 0;
+}
+.viewApp-profilePic{
+	padding: 0;
+	margin: 0;
+	display: inline;
+	float: left;
+	width: 50px;
+	height: 50px;
+}
+.viewApp-name{
+	font-size: 1.5em;
+	text-align: left;
+	display: inline;
+	padding: 10px;
+	float: left;
+}
+
+#viewAppText{
+	font-size: 2em;
+	text-align: left;
+	margin:0;
+}
+.applyingFor{
+	text-align: left;
+	clear:left;
+	padding: 0 10px 10px 10px;
+}
+p.viewApp-link{
+	margin:5px 0 0 10px;
+}
