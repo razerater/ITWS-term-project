@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+	    <title>Login Page - Applicant</title>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	    <link rel="stylesheet" href="resources/login.css" type="text/css" />
+      <link rel="stylesheet" href="resources/header.css" type="text/css" />
+	</head>
+
+  <body>
+  	<header id="head">
+      <div id="logo">
+        <a href="/"><img src="logo.png" alt="logo"></a>
+        <!-- we don't have this yet -->
+        <!-- background is red so we can visualize the space it's going to occupy -->
+      </div>
+      <div id="head-top">
+        <nav>
+          <ul>
+            <li>
+              <a href="about.html" target="_self">About Us</a>
+            </li>
+            <li class="vbar">
+              |
+            </li>
+            <li>
+              <a href="explore.html" target="_self">Explore Jobs</a>
+            </li>
+            <li class="vbar">
+              |
+            </li>
+            <li>
+              <a href="register.html" target="_self">Register</a>
+            </li>
+            <li class="vbar">
+              |
+            </li>
+            <li>
+              <a href="login.html" target="_self">Login</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div id="head-bottom">
+        <span id="slogan">"The universal job application!"</span>
+      </div>
+    </header>
+
+  	<div class = "login-centered">
+  		<div class = "login-loginInfo">
+  			<div class = "login-type">Applicant</div>
+  			<div class = "login-type">Company</div>
+
+  			<form id="addForm" name="addForm" action="#" method="post" onsubmit="false">
+	        <fieldset> 
+	          <div class="formData">
+	            <label class="login-field" for="email">Email:</label>
+	            <div class="login-value"><input type="text" size="60" value="" name="email" id="email"/></div>
+	            <label class="login-field" for="password">Password:</label>
+	            <div class="login-value"><input type="text" size="60" value="" name="password" id="password"/></div>
+	            <input type="submit" value="Login" id="login-login" name="login"/>
+	          </div>
+	        </fieldset>
+      	</form>
+
+      	<p class="login-registerNowText">Not a user?</p>
+      	<button type="button" id="login-registerNow" onclick = >Register Now!</button>
+      	<div id="login-goBack" onclick = >Go Back</div>
+  		</div>
+  	</div>
+
+  	<!-- Footer stuff will go here --> 
+	</body>
