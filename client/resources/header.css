@@ -1,10 +1,10 @@
-body {
-	margin: 0;
-}
 #head {
 	font-family: Arial;
 	height: 150px;
 	border-bottom: solid black 2px;
+}
+#head a:hover {
+	color: red;
 }
 #logo {
 	float: left;
