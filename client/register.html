@@ -4,7 +4,9 @@
 	    <title>Register</title>
 	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	    <link rel="stylesheet" href="resources/header.css" type="text/css" />
-      <link rel="stylesheet" href="resources/register.css" type="text/css" />
+      <link rel="stylesheet" href="resources/register.css" type="text/css"/>
+      <link rel="stylesheet" type="text/css" href="resources/footer.css">
+      <script type="text/javascript" src="resources/jquery-3.1.1.min.js"></script>
 	</head>
 
   <body>
@@ -47,17 +49,21 @@
     </header>
     
   	<div class="choice-centered">
-      <div class="choice-blank1"> </div>
-      <a href="registerCandidate.html"><img src="resources/images/candidate.png" alt="candidate"></a>
-      <div class="choice-blank2"> </div>
-      <a href="registerCompany.html"><img src="resources/images/company.png" alt="comany"></a>
-      <div class = "choice"><a href="registerCandidate.html" class="choice">I'm a Candidate</a></div>
-      <div class = "choice"><a href="registerCompany.html" class="choice">I'm a Company</a></div>
-    </div>
 
-    <div class="register-candidate">
+      <div class="choice-block1">
+        <img class="choiceImage" src="resources/images/candidate.png" alt="candidate">
+        <div class = "register-choiceCandidate">I'm a Candidate</div>
+      </div>
+
+      <div class="choice-block2">
+        <img class="choiceImage" src="resources/images/company.png" alt="company">
+        <div class = "register-choiceCompany">I'm a Company</div>
+      </div>
+    </div>
+    
+    <div id="register-candidate">
       <div class="register-type">Candidate</div>
-      <form id="addForm" name="addForm" action="#" method="post" onsubmit="false">
+      <form id="register-candidateForm" name="register-candidateForm" action="#" method="post">
         <fieldset> 
           <div class="formData">
             <label class="register-field" for="fistName">First Name:</label>
@@ -90,9 +96,9 @@
       </form>
     </div>
 
-    <div class="register-company">
+    <div id="register-company">
       <div class="register-type">Company</div>
-      <form id="addForm" name="addForm" action="#" method="post" onsubmit="false">
+      <form id="register-companyForm" name="register-companyForm" action="#" method="post">
         <fieldset> 
           <div class="formData">
             <label class="register-field" for="id">ID (<a href="applyID.html">click to apply</a>):</label>
@@ -113,12 +119,18 @@
             <label class="register-field" for="question">How did you hear about us: (optional)</label>
             <div class="value"><textarea rows="4" cols="33" name="question" id="question"></textarea></div>
 
-            <div id="register-applyID">Apply for an ID!</div>
+            <button id="register-applyID">Apply for an ID!</button>
 
             <input type="submit" value="Register Now!" id="register-register" name="register"/>
           </div>
         </fieldset>
       </form>
+      </div>
     </div>
-  	<!-- Footer stuff will go here --> 
+    <div id = "register-login">
+    Already have an account? <a href="login.html">Click to Login</a>
+    </div>
+    
+    <script type="text/javascript" src="resources/register.js"></script>
 	</body>
+</html>
