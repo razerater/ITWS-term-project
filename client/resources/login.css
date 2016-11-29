@@ -1,3 +1,6 @@
+body{
+	font-family: Arial, Helvetica, sans-serif; 
+}
 .login-centered{
 	padding-top: 100px;
   max-width:500px;
@@ -14,10 +17,10 @@
 }
 .login-type{
 	float: left;
-	margin: 0 5px 5px 5px;
+	margin: 0 5px 5px 10px;
 	padding: 5px 0 5px 0;
-	width: 239px;
-	font-size: 30px;
+	width: 234px;
+	font-size: 28px;
 	border-bottom: thin solid;
 	border-right:thin solid;
 }
@@ -26,7 +29,7 @@
 	padding: 20px 10px 0 10px;
 }
 .login-field {
-  width: 90px;
+  width: 150px;
   margin: 0;
   float: left;
   text-align: left;

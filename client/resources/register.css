@@ -1,5 +1,9 @@
+body{
+	font-family: Arial, Helvetica, sans-serif; 
+}
 .choice-centered{
 	padding-top: 100px;
+	padding-bottom: 50px;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
@@ -11,22 +15,23 @@
 	margin: 0;
 	padding: 0;
 	font-size: 50px;
-	width:400px;
-}
-a.choice{
-	color:darkgrey;
+	width:350px;
+	color:#89cff0;
 	text-decoration: none;
 }
-.choice-blank1{
+.choice-block1{
 	display: inline;
-	padding: 35px;
+	float:left;
+	width: 300px;
+	padding-left: 30px;
 }
-.choice-blank2{
+.choice-block2{
 	display: inline;
-	padding: 75px;
+	float: right;
+	width: 300px;
 }
-.register-company{
-	margin-top: 200px;
+#register-company{
+	margin-top: 100px;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -34,20 +39,36 @@ a.choice{
 	padding-bottom: 10px;
 	border-radius: 10px;
 }
-.register-candidate{
-	margin-top: 200px;
+#register-candidate{
+	margin-top: 100px;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
   border: medium solid;
 	padding-bottom: 10px;
 	border-radius: 10px;
+}
+.register-choiceCandidate{
+	margin: 0 5px 5px 5px;
+	padding: 5px 0 5px 10px;
+	font-size: 30px;
+	color: #89CFF0;
+	float:left;
+	clear:left;
+}
+.register-choiceCompany{
+	margin: 0 5px 5px 5px;
+	padding: 5px 50px 5px 10px;
+	font-size: 30px;
+	color: #89CFF0;
+	float:right;
+	clear:left;
 }
 .register-type{
 	margin: 0 5px 5px 5px;
 	padding: 5px 0 5px 10px;
 	font-size: 30px;
-	border-bottom: thin solid;
+	border-bottom: thin black solid;
 }
 .register-material{
 	width: 500px;
@@ -66,6 +87,10 @@ a.choice{
 }
 fieldset{
 	border: none;
+}
+img.choiceImage{
+	width: auto;
+	height: 261.7px;
 }
 #register-register{
 	padding: 5px 20px 5px 20px;
@@ -87,6 +112,18 @@ fieldset{
 	margin-top: 1.5em;
 	border: none;
 	font-family: Arial;
+}
+#register-login{
+	margin: 100px 0 0 0;
+	padding: 10px 0 10px 0;
+	text-align: center;
+	background-color: grey;
+	color: white;
+	font-size: 20px;
+	clear:left;
+	float:left;
+	width: 100%;
+
 }
 input.register{
 	display: inline;
