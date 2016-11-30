@@ -1,0 +1,51 @@
+body{
+	font-family: Arial; 
+	margin: 0;
+}
+
+#mainBody{
+	margin: 50px;
+  max-width:800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h2{
+	text-decoration: underline;
+	margin-top:0;
+}
+fieldset{
+	padding:30px;
+	padding-top: 20px;
+	border-radius: 15px;
+	border-width: thick;
+	margin:0;
+}
+#question{
+	background-color: lightgrey;
+	border-radius: 10px;
+	margin: 15px;
+	margin-left: 80px;
+	padding: 10px;
+	font-size: 15px;
+}
+.supplemental-field{
+	margin-left: 40px;
+	font-size: 20px;
+}
+.choice{
+	margin-left: 80px;
+	margin-top: 20px;
+}
+#submit{
+	margin:20px;
+	margin-left: 40px;
+	font-size: 1.5em;
+	margin-bottom: 0;
+}
+#supplemental-goBack{
+	margin: 30px;
+	margin-right: 60px;
+	font-size: 1em;
+	margin-bottom: 0;
+	float:right;
+}

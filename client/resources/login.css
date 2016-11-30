@@ -1,5 +1,6 @@
 body{
-	font-family: Arial, Helvetica, sans-serif; 
+	font-family: Arial; 
+	margin: 0;
 }
 .login-centered{
 	padding-top: 100px;
@@ -15,7 +16,36 @@ body{
 	border-radius: 10px;
 	width:500px;
 }
-.login-type{
+.login-loginInfo-C{
+	border: medium solid;
+	padding-bottom: 10px;
+	margin:0;
+	border-radius: 10px;
+	width:500px;
+}
+.login-type-ca1{
+	float: left;
+	margin: 0 5px 5px 10px;
+	padding: 5px 0 5px 0;
+	width: 234px;
+	font-size: 28px;
+}
+
+.login-type-co1{
+	float: left;
+	margin: 0 5px 5px 0;
+	padding: 5px 0 5px 10px;
+	width: 234px;
+	font-size: 28px;
+	border-bottom: thin solid;
+	border-left:thin solid;
+}
+
+.login-type-co1:hover {
+	cursor: pointer;
+}
+
+.login-type-ca2{
 	float: left;
 	margin: 0 5px 5px 10px;
 	padding: 5px 0 5px 0;
@@ -24,6 +54,19 @@ body{
 	border-bottom: thin solid;
 	border-right:thin solid;
 }
+
+.login-type-ca2:hover {
+	cursor: pointer;
+}
+
+.login-type-co2{
+	float: left;
+	margin: 0 5px 5px 10px;
+	padding: 5px 0 5px 0px;
+	width: 234px;
+	font-size: 28px;
+}
+
 .login-material{
 	width: 500px;
 	padding: 20px 10px 0 10px;
@@ -47,28 +90,37 @@ fieldset{
 	font-size: 2em;
 	float: right;
 }
+#login-login:hover{
+	cursor: pointer;
+}
 #login-registerNow{
 	display: inline;
 	padding: 0 10px 0 10px;
-	margin-right: 13px;
+	margin-right: 10px;
 	font-size: 1em;
 	float: right;
 	text-align: right;
 }
+#login-registerNow:hover{
+	cursor: pointer;
+}
 p.login-registerNowText{
-	margin: 0 30px 0 0;
+	margin: 0 20px 0 0;
 	padding: 0;
 	display:inline-block;
 	font-size: 15px;
 	text-align: right;
-	width: 325px;
+	width: 335px;
 }
 
-#login-goBack{
+.login-goBack{
 	text-align: center;
 	border-top: thin solid;
 	margin-top: 10px;
 	padding: 5px 0 0 0;
 	font-size: 20px;
 	width: 500px;
+}
+.login-goBack:hover {
+	cursor: pointer;
 }

@@ -1,5 +1,6 @@
 body{
-	font-family: Arial, Helvetica, sans-serif; 
+	font-family: Arial; 
+	margin: 0;
 }
 .choice-centered{
 	padding-top: 100px;
@@ -123,7 +124,6 @@ img.choiceImage{
 	clear:left;
 	float:left;
 	width: 100%;
-
 }
 input.register{
 	display: inline;

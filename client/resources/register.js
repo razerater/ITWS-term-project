@@ -26,7 +26,7 @@ document.getElementById('register-applyID').onclick = function(event) {
 	window.location = "applyID.html";
 }
 
-document.getElementById('register-commpanyForm').onsubmit = function(event) {
+document.getElementById('register-companyForm').onsubmit = function(event) {
 	event.preventDefault();
 	window.location = "companyProfile.html";
 }
