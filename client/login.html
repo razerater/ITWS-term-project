@@ -6,6 +6,8 @@
 	    <link rel="stylesheet" href="resources/login.css" type="text/css" />
       <link rel="stylesheet" href="resources/header.css" type="text/css" />
       <link rel="stylesheet" type="text/css" href="resources/footer.css">
+      <script type="text/javascript" src="resources/jquery-3.1.1.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="resources/font-awesome/css/font-awesome.min.css">
 	</head>
 
   <body>
@@ -49,10 +51,10 @@
 
   	<div class = "login-centered">
   		<div class = "login-loginInfo">
-  			<div class = "login-type">Applicant</div>
-  			<div class = "login-type">Company</div>
+  			<div class = "login-type-ca1">Applicant</div>
+  			<div class = "login-type-co1">Company</div>
 
-  			<form id="addForm" name="addForm" action="#" method="post">
+  			<form id="addFormApp" name="addFormApp" action="#" method="post">
 	        <fieldset> 
 	          <div class="formData">
 	            <label class="login-field" for="email">Email:</label>
@@ -66,24 +68,45 @@
 
       	<p class="login-registerNowText">Not a user?</p>
       	<button type="button" id="login-registerNow" onClick="location.href='register.html'")">Register Now!</button>
-      	<div id="login-goBack" onclick = >Go Back</div>
+      	<div class="login-goBack">Go Back</div>
   		</div>
+
+      <div class = "login-loginInfo-C">
+        <div class = "login-type-ca2">Applicant</div>
+        <div class = "login-type-co2">Company</div>
+
+        <form id="addFormCom" name="addFormCom" action="#" method="post">
+          <fieldset> 
+            <div class="formData">
+              <label class="login-field" for="id">ID:</label>
+              <div class="login-value"><input type="text" size="60" value="" name="email" id="email"/></div>
+              <label class="login-field" for="password">Password:</label>
+              <div class="login-value"><input type="text" size="60" value="" name="password" id="password"/></div>
+              <input type="submit" value="Login" id="login-login" name="login"/>
+            </div>
+          </fieldset>
+        </form>
+
+        <p class="login-registerNowText">Not a partner?</p>
+        <button type="button" id="login-registerNow" onClick="location.href='register.html'")">Register Now!</button>
+        <div class="login-goBack">Go Back</div>
+      </div>
   	</div>
-    <footer id = "foot"> 
+    <footer id="foot">
       <div id="footTop">
-          <nav class = "footList">
-            <a class = "footLink" href = "about.html">About us</a> | 
-            <a class = "footLink" href = "careers.html">Careers</a> |
-            <a class = "footLink" href = "contact.html">Contact us</a> | 
-            <a class = "footLink" href = "privacy.html">Privacy Policy</a> | 
-            <a class = "footLink" href = "www.facebook.com" target = "_blank"><img src = "resources/FBLogo.png" name = "Fb" height = "30" width = "30"><a href = "www.facebook.com"></a>
-            <a class = "footLink" href = "www.twitter.com" target = "_blank"><img src = "resources/TwitLogo.png" name = "Twit" height = "30" width = "30"></a>
-            <a class = "footLink" href = "www.linkedin.com" target = "_blank"><img src = "resources/LinkedInLogo.png" name = "Linked" height = "30" width = "30"></a>
-          </nav>  
-        </div>
-      <div id = "copyright"> 
-        ©JobLine 2016
-      </div> 
+        <nav class="footList">
+          <a class="footLink" href="about.html">About us</a> | 
+          <a class="footLink" href="careers.html">Careers</a> | 
+          <a class="footLink" href="contact.html">Contact us</a> | 
+          <a class="footLink" href="privacy.html">Privacy Policy</a> | 
+          <a class="footLink" href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square fa-lg" aria-hidden="true" title="Friend us on Facebook!"></i></a>
+          <a class="footLink" href="https://twitter.com" target="_blank"><i class="fa fa-twitter-square fa-lg" aria-hidden="true" title="Follow us on Twitter!"></i></a>
+          <a class="footLink" href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true" title="Connect with us on LinkedIn!"></i></a>
+        </nav>
+      </div>
+      <div id="copyright">
+        &copy; JobLine 2016
+      </div>
     </footer>
     <script type="text/javascript" src="resources/login.js"></script>
 	</body>

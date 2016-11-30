@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>View Applications</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="resources/header.css">
+		<link rel="stylesheet" type="text/css" href="resources/supplemental.css">
+		<link rel="stylesheet" type="text/css" href="resources/footer.css">
+		<link rel="stylesheet" type="text/css" href="resources/font-awesome/css/font-awesome.min.css">
+	</head>
+	<body>
+		<header id="head">
+			<div id="logo">
+				<a href="/"><img src="logo.png" alt="logo"></a>
+				<!-- we don't have this yet -->
+				<!-- background is red so we can visualize the space it's going to occupy -->
+			</div>
+			<div id="head-top">
+				<nav>
+					<ul>
+						<li>
+							<a href="about.html" target="_self">About Us</a>
+						</li>
+						<li class="vbar">
+							|
+						</li>
+						<li>
+							<a href="explore.html" target="_self">Explore Jobs</a>
+						</li>
+						<li class="vbar">
+							|
+						</li>
+						<li>
+							<a href="register.html" target="_self">Register</a>
+						</li>
+						<li class="vbar">
+							|
+						</li>
+						<li>
+							<a href="login.html" target="_self">Login</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div id="head-bottom">
+				<span id="slogan">"The universal job application!"</span>
+			</div>
+		</header>
+		
+		<div id="mainBody">
+			<h1>Supplemental Questions for Applicants</h1>
+
+			<form id="addForm" name="addForm" action="#" method="post">
+	        <fieldset> 
+	        	<h2>Questions from Google</h2>
+	          <div class="formData">
+	            <label class="supplemental-field" for="question">How did you hear about us: (optional)</label>
+            	<div class="value"><textarea rows="6" cols="40" name="question" id="question"></textarea></div>
+
+	            <label class="supplemental-field" for="password">Have you worked with a government contractor before?</label><br>
+	            <div class="choice">
+	              <input type="radio" name="choice" value="yes"> Yes<br>
+							  <input type="radio" name="choice" value="no"> No<br>
+							 </div>
+
+							<button id="supplemental-goBack">Back to my profile page</button>
+	            <input type="submit" value="Apply!" id="submit" name="submit"/>
+	          </div>
+	        </fieldset>
+	    	</form>
+    	</div>
+
+		
+		<footer id="foot">
+			<div id="footTop">
+				<nav class="footList">
+					<a class="footLink" href="about.html">About us</a> | 
+					<a class="footLink" href="careers.html">Careers</a> | 
+					<a class="footLink" href="contact.html">Contact us</a> | 
+					<a class="footLink" href="privacy.html">Privacy Policy</a> | 
+					<a class="footLink" href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square fa-lg" aria-hidden="true" title="Friend us on Facebook!"></i></a>
+					<a class="footLink" href="https://twitter.com" target="_blank"><i class="fa fa-twitter-square fa-lg" aria-hidden="true" title="Follow us on Twitter!"></i></a>
+					<a class="footLink" href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true" title="Connect with us on LinkedIn!"></i></a>
+				</nav>
+			</div>
+			<div id="copyright">
+				&copy; JobLine 2016
+			</div>
+		</footer>
+	</body>
+</html>
