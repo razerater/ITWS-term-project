@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>JobLine</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="resources/header.css">
+		<link rel="stylesheet" type="text/css" href="resources/congrats.css">
+		<link rel="stylesheet" type="text/css" href="resources/footer.css">
+		<!-- font awesome version 4.7.0 -->
+		<link rel="stylesheet" type="text/css" href="resources/font-awesome/css/font-awesome.min.css">
+	</head>
+	<body>
+		<header id="head">
+			<div id="logo">
+				<a href="/"><img src="logo.png" alt="logo"></a>
+				<!-- we don't have this yet -->
+				<!-- background is red so we can visualize the space it's going to occupy -->
+			</div>
+			<div id="head-top">
+				<nav>
+					<ul>
+						<li>
+							<a href="about.html" target="_self">About Us</a>
+						</li>
+						<li class="vbar">
+							|
+						</li>
+						<li>
+							<a href="explore.html" target="_self">Explore Jobs</a>
+						</li>
+						<li class="vbar">
+							|
+						</li>
+						<li>
+							<a href="register.html" target="_self">Register</a>
+						</li>
+						<li class="vbar">
+							|
+						</li>
+						<li>
+							<a href="login.html" target="_self">Login</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div id="head-bottom">
+				<span id="slogan">"The universal job application!"</span>
+			</div>
+		</header>
+		<main>
+			<h1 id="message">
+				Congratulations! You have successfully applied to [position] at [company name]!
+			</h1>
+			<button id="back" onclick="window.location = 'appProfile.html';">Back to profile page</button>
+		</main>
+		<footer id="foot">
+			<div id="footTop">
+				<nav class="footList">
+					<a class="footLink" href="about.html">About us</a> | 
+					<a class="footLink" href="careers.html">Careers</a> | 
+					<a class="footLink" href="contact.html">Contact us</a> | 
+					<a class="footLink" href="privacy.html">Privacy Policy</a> | 
+					<a class="footLink" href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square fa-lg" aria-hidden="true" title="Friend us on Facebook!"></i></a>
+					<a class="footLink" href="https://twitter.com" target="_blank"><i class="fa fa-twitter-square fa-lg" aria-hidden="true" title="Follow us on Twitter!"></i></a>
+					<a class="footLink" href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true" title="Connect with us on LinkedIn!"></i></a>
+				</nav>
+			</div>
+			<div id="copyright">
+				&copy; JobLine 2016
+			</div>
+		</footer>
+	</body>
+</html>
