@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>JobLine</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="resources/header.css">
+		<link rel="stylesheet" type="text/css" href="resources/addPosition.css">
+		<link rel="stylesheet" type="text/css" href="resources/footer.css">
+		<!-- font awesome version 4.7.0 -->
+		<link rel="stylesheet" type="text/css" href="resources/font-awesome/css/font-awesome.min.css">
+		<script type="text/javascript" src="resources/addPosition.js"></script>
+	</head>
+	<body>
+		<header id="head">
+			<div id="logo">
+				<a href="/"><img src="logo.png" alt="logo"></a>
+				<!-- we don't have this yet -->
+				<!-- background is red so we can visualize the space it's going to occupy -->
+			</div>
+			<div id="head-top">
+				<nav>
+					<ul>
+						<li>
+							<a href="about.html" target="_self">About Us</a>
+						</li>
+						<li class="vbar">
+							|
+						</li>
+						<li>
+							<a href="explore.html" target="_self">Explore Jobs</a>
+						</li>
+						<li class="vbar">
+							|
+						</li>
+						<li>
+							<a href="register.html" target="_self">Register</a>
+						</li>
+						<li class="vbar">
+							|
+						</li>
+						<li>
+							<a href="login.html" target="_self">Login</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div id="head-bottom">
+				<span id="slogan">"The universal job application!"</span>
+			</div>
+		</header>
+		<main>
+			<form id="add-pos">
+				<label for="pos-title">Title:</label>
+				<input type="text" id="pos-title" name="pos-title"></input>
+				<label for="pos-desc">Description:</label>
+				<textarea id="pos-desc" name="pos-desc" form="add-pos" rows="8" cols="80"></textarea>
+				<label>Requirements:</label> <!-- use js to make it so that when a user clicks on this label it sets a focus on the first li in #requirements-list -->
+				<ul id="requirements-list">
+					<li>
+						<input type="text"></input>
+						<!-- fontawesome buttons that remove/add a requirement -->
+						<i class="fa fa-minus rm-req" aria-hidden="true" onclick="delet(this);"></i>
+						<i class="fa fa-plus add-req" aria-hidden="true" onclick="duplicate(this);"></i>
+					</li>
+				</ul>
+				<label>Additional Questions:</label> <!-- same here but for #questions-list -->
+				<ol id="questions-list">
+					<li>
+						<input type="text"></input>
+						<!-- fontawesome buttons that remove/add an additional question -->
+						<i class="fa fa-minus rm-ques" aria-hidden="true" onclick="delet(this);"></i>
+						<i class="fa fa-plus add-ques" aria-hidden="true" onclick="duplicate(this);"></i>
+					</li>
+				</ol>
+				<input id="submit" name="submit" type="submit" value="Save"></input>
+			</form>
+		</main>
+		<footer id="foot">
+			<div id="footTop">
+				<nav class="footList">
+					<a class="footLink" href="about.html">About us</a> | 
+					<a class="footLink" href="careers.html">Careers</a> | 
+					<a class="footLink" href="contact.html">Contact us</a> | 
+					<a class="footLink" href="privacy.html">Privacy Policy</a> | 
+					<a class="footLink" href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square fa-lg" aria-hidden="true" title="Friend us on Facebook!"></i></a>
+					<a class="footLink" href="https://twitter.com" target="_blank"><i class="fa fa-twitter-square fa-lg" aria-hidden="true" title="Follow us on Twitter!"></i></a>
+					<a class="footLink" href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true" title="Connect with us on LinkedIn!"></i></a>
+				</nav>
+			</div>
+			<div id="copyright">
+				&copy; JobLine 2016
+			</div>
+		</footer>
+	</body>
+</html>
