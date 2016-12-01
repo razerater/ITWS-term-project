@@ -7,14 +7,14 @@
       <link rel="stylesheet" href="resources/register.css" type="text/css"/>
       <link rel="stylesheet" type="text/css" href="resources/footer.css">
       <script type="text/javascript" src="resources/jquery-3.1.1.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="resources/font-awesome/css/font-awesome.min.css">
 	</head>
 
   <body>
   	<header id="head">
       <div id="logo">
-        <a href="/"><img src="logo.png" alt="logo"></a>
-        <!-- we don't have this yet -->
-        <!-- background is red so we can visualize the space it's going to occupy -->
+        <a href="index.html"><img src="resources/images/logo.png" alt="logo" height="100%" width="50%"></a>
+
       </div>
       <div id="head-top">
         <nav>
@@ -48,88 +48,109 @@
       </div>
     </header>
     
-  	<div class="choice-centered">
+    <main>
 
-      <div class="choice-block1">
-        <img class="choiceImage" src="resources/images/candidate.png" alt="candidate">
-        <div class = "register-choiceCandidate">I'm a Candidate</div>
+    	<div class="choice-centered">
+
+        <div class="choice-block1">
+          <img class="choiceImage" src="resources/images/candidate.png" alt="candidate">
+          <div class = "register-choiceCandidate">I'm a Candidate</div>
+        </div>
+
+        <div class="choice-block2">
+          <img class="choiceImage" src="resources/images/company.png" alt="company">
+          <div class = "register-choiceCompany">I'm a Company</div>
+        </div>
+      </div>
+      
+      <div id="register-candidate">
+        <div class="register-type">Candidate</div>
+        <form id="register-candidateForm" name="register-candidateForm" action="#" method="post">
+          <fieldset> 
+            <div class="formData">
+              <label class="register-field" for="fistName">First Name:</label>
+              <div class="register-value"><input class="register" type="text" size="60" value="" name="firstName" id="firstName"/></div>
+
+              <label class="register-field" for="middleName">Middle Name (optional):</label>
+              <div class="register-value"><input class="register" type="text" size="60" value="" name="middleName" id="middleName"/></div>
+
+              <label class="register-field" for="lastName">Last Name:</label>
+              <div class="register-value"><input class="register" type="text" size="60" value="" name="lastName" id="lastName"/></div>
+
+              <label class="register-field" for="birthday">Date of Birth:</label>
+              <div class="register-value"><input class="register" type="text" size="60" value="" name="birthday" id="birthday"/></div>
+
+              <label class="register-field" for="email">Email:</label>
+              <div class="register-value"><input class="register" type="text" size="60" value="" name="email" id="email"/></div>
+
+              <label class="register-field" for="password">Password:</label>
+              <div class="register-value"><input class="register" type="text" size="60" value="" name="password" id="password"/></div>
+
+              <label class="register-field" for="rePassword">Retype Password:</label>
+              <div class="register-value"><input class="register" type="text" size="60" value="" name="rePassword" id="rePassword"/></div>
+
+              <label class="register-field" for="question">How did you hear about us: (optional)</label>
+              <div class="value"><textarea rows="4" cols="33" name="question" id="question"></textarea></div>
+
+              <input type="submit" value="Register Now!" id="register-register" name="register"/>
+            </div>
+          </fieldset>
+        </form>
       </div>
 
-      <div class="choice-block2">
-        <img class="choiceImage" src="resources/images/company.png" alt="company">
-        <div class = "register-choiceCompany">I'm a Company</div>
+      <div id="register-company">
+        <div class="register-type">Company</div>
+        <form id="register-companyForm" name="register-companyForm" action="#" method="post">
+          <fieldset> 
+            <div class="formData">
+              <label class="register-field" for="id">ID (<a href="applyID.html">click to apply</a>):</label>
+              <div class="register-value"><input class="register" type="text" size="60" value="" name="id" id="id"/></div>
+
+              <label class="register-field" for="companyName">Name of company:</label>
+              <div class="register-value"><input class="register" type="text" size="60" value="" name="companyName" id="companyName"/></div>
+
+              <label class="register-field" for="email">Email:</label>
+              <div class="register-value"><input class="register" type="text" size="60" value="" name="email" id="email"/></div>
+
+              <label class="register-field" for="password">Password:</label>
+              <div class="register-value"><input class="register" type="text" size="60" value="" name="password" id="password"/></div>
+
+              <label class="register-field" for="rePassword">Retype Password:</label>
+              <div class="register-value"><input class="register" type="text" size="60" value="" name="rePassword" id="rePassword"/></div>
+
+              <label class="register-field" for="question">How did you hear about us: (optional)</label>
+              <div class="value"><textarea rows="4" cols="33" name="question" id="question"></textarea></div>
+
+              <button id="register-applyID" onclick = "applyID()">Apply for an ID!</button>
+
+              <input type="submit" value="Register Now!" id="register-register" name="register"/>
+            </div>
+          </fieldset>
+        </form>
+        </div>
       </div>
-    </div>
-    
-    <div id="register-candidate">
-      <div class="register-type">Candidate</div>
-      <form id="register-candidateForm" name="register-candidateForm" action="#" method="post">
-        <fieldset> 
-          <div class="formData">
-            <label class="register-field" for="fistName">First Name:</label>
-            <div class="register-value"><input class="register" type="text" size="60" value="" name="firstName" id="firstName"/></div>
 
-            <label class="register-field" for="middleName">Middle Name (optional):</label>
-            <div class="register-value"><input class="register" type="text" size="60" value="" name="middleName" id="middleName"/></div>
-
-            <label class="register-field" for="lastName">Last Name:</label>
-            <div class="register-value"><input class="register" type="text" size="60" value="" name="lastName" id="lastName"/></div>
-
-            <label class="register-field" for="birthday">Date of Birth:</label>
-            <div class="register-value"><input class="register" type="text" size="60" value="" name="birthday" id="birthday"/></div>
-
-            <label class="register-field" for="email">Email:</label>
-            <div class="register-value"><input class="register" type="text" size="60" value="" name="email" id="email"/></div>
-
-            <label class="register-field" for="password">Password:</label>
-            <div class="register-value"><input class="register" type="text" size="60" value="" name="password" id="password"/></div>
-
-            <label class="register-field" for="rePassword">Retype Password:</label>
-            <div class="register-value"><input class="register" type="text" size="60" value="" name="rePassword" id="rePassword"/></div>
-
-            <label class="register-field" for="question">How did you hear about us: (optional)</label>
-            <div class="value"><textarea rows="4" cols="33" name="question" id="question"></textarea></div>
-
-            <input type="submit" value="Register Now!" id="register-register" name="register"/>
-          </div>
-        </fieldset>
-      </form>
-    </div>
-
-    <div id="register-company">
-      <div class="register-type">Company</div>
-      <form id="register-companyForm" name="register-companyForm" action="#" method="post">
-        <fieldset> 
-          <div class="formData">
-            <label class="register-field" for="id">ID (<a href="applyID.html">click to apply</a>):</label>
-            <div class="register-value"><input class="register" type="text" size="60" value="" name="id" id="id"/></div>
-
-            <label class="register-field" for="companyName">Name of company:</label>
-            <div class="register-value"><input class="register" type="text" size="60" value="" name="companyName" id="companyName"/></div>
-
-            <label class="register-field" for="email">Email:</label>
-            <div class="register-value"><input class="register" type="text" size="60" value="" name="email" id="email"/></div>
-
-            <label class="register-field" for="password">Password:</label>
-            <div class="register-value"><input class="register" type="text" size="60" value="" name="password" id="password"/></div>
-
-            <label class="register-field" for="rePassword">Retype Password:</label>
-            <div class="register-value"><input class="register" type="text" size="60" value="" name="rePassword" id="rePassword"/></div>
-
-            <label class="register-field" for="question">How did you hear about us: (optional)</label>
-            <div class="value"><textarea rows="4" cols="33" name="question" id="question"></textarea></div>
-
-            <button id="register-applyID">Apply for an ID!</button>
-
-            <input type="submit" value="Register Now!" id="register-register" name="register"/>
-          </div>
-        </fieldset>
-      </form>
+      <div id = "register-login">
+      Already have an account? <u>Click to Login</u>
       </div>
-    </div>
-    <div id = "register-login">
-    Already have an account? <a href="login.html">Click to Login</a>
-    </div>
+    </main>
+
+    <footer id="foot">
+      <div id="footTop">
+        <nav class="footList">
+          <a class="footLink" href="about.html">About us</a> | 
+          <a class="footLink" href="careers.html">Careers</a> | 
+          <a class="footLink" href="contact.html">Contact us</a> | 
+          <a class="footLink" href="privacy.html">Privacy Policy</a> | 
+          <a class="footLink" href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square fa-lg" aria-hidden="true" title="Friend us on Facebook!"></i></a>
+          <a class="footLink" href="https://twitter.com" target="_blank"><i class="fa fa-twitter-square fa-lg" aria-hidden="true" title="Follow us on Twitter!"></i></a>
+          <a class="footLink" href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true" title="Connect with us on LinkedIn!"></i></a>
+        </nav>
+      </div>
+      <div id="copyright">
+        &copy; JobLine 2016
+      </div>
+    </footer>
     
     <script type="text/javascript" src="resources/register.js"></script>
 	</body>
