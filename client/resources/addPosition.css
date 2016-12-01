@@ -1,0 +1,59 @@
+body {
+	margin: 0;
+	font-family: Arial;
+}
+#add-pos {
+	margin: 40px;
+}
+#add-pos label {
+	font-size: 1.4em;
+	font-weight: bold;
+}
+#add-pos input, textarea {
+	margin-top: 5px;
+	margin-bottom: 20px;
+	padding: 3px;
+	font-size: 1.1em;
+}
+#add-pos > * {
+	/* this styles all immediate children of #add-pos */
+	display: block;
+}
+#pos-desc {
+	padding: 3px;
+	font-family: Arial;
+	resize: both;
+	max-width: 90%;
+}
+.rm-req, .add-req,
+.rm-ques, .add-ques {
+	margin-left: 8px;
+	display: inline-block;
+	cursor: pointer;
+}
+.rm-req, .rm-ques {
+	color: red;
+}
+.add-req, .add-ques {
+	color: green;
+}
+#requirements-list, #questions-list {
+	margin-top: 5px;
+}
+#requirements-list {
+	padding-left: 0;
+	list-style-type: none;
+}
+#questions-list li {
+	padding-left: 6px;
+}
+#submit {
+	position: absolute;
+	right: 50px;
+	top: 615px;
+	border-width: 4px;
+	border-radius: 8px;
+	color: green;
+	width: 200px;
+	height: 60px;
+}
