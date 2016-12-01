@@ -12,6 +12,7 @@ body{
 #logo {
 	float: left;
 	width: 24.5%;
+	border-right: 2px solid black;
 	height: 150px;
 	background-color: white;
 }
@@ -19,7 +20,6 @@ body{
 	float: left;
 	clear: right;
 	width: 75%;
-	border-left: 2px solid black;
 	background-color: #89CFF0;
 	margin: 0 auto;
 }
