@@ -1,0 +1,55 @@
+body {
+	margin: 0;
+	font-family: Arial;
+}
+main {
+	padding: 10px;
+}
+fieldset:not(#bottom) {
+	margin: 30px;
+	padding: 20px 20px 5px 20px;
+	border: 1px solid black;
+}
+fieldset legend {
+	color: #EEE;
+	background-color: #5B9BD5;
+	padding: 4px 8px;
+	border: 1px solid black;
+	font-size: 1.2em;
+}
+fieldset > div {
+	margin-bottom: 25px;
+}
+fieldset input:not([type="checkbox"]) {
+	width: 160px;
+}
+.full-name, .location, .phone, .other,
+.position, .date, .desc, .edu-info {
+	display: inline-block;
+	margin: 0 10px 0 10px;
+}
+#job-desc {
+	width: 348px;
+	max-width: 800px;
+	max-height: 200px;
+}
+#bottom {
+	margin: 30px;
+	border: none;
+}
+#asterisk {
+	display: inline-block;
+}
+#submit {
+	display: inline-block;
+	float: right;
+	font-size: 2em;
+	border-width: 4px;
+	border-radius: 8px;
+	color: green;
+	width: 200px;
+	height: 60px;
+}
+.required {
+	color: red;
+}
