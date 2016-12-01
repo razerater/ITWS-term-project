@@ -13,9 +13,8 @@
   <body>
   	<header id="head">
       <div id="logo">
-        <a href="/"><img src="resources/images/logo.png" alt="logo"></a>
-        <!-- we don't have this yet -->
-        <!-- background is red so we can visualize the space it's going to occupy -->
+        <a href="index.html"><img src="resources/images/logo.png" alt="logo" height="100%" width="50%"></a>
+
       </div>
       <div id="head-top">
         <nav>
@@ -122,7 +121,7 @@
               <label class="register-field" for="question">How did you hear about us: (optional)</label>
               <div class="value"><textarea rows="4" cols="33" name="question" id="question"></textarea></div>
 
-              <button id="register-applyID">Apply for an ID!</button>
+              <button id="register-applyID" onclick = "applyID()">Apply for an ID!</button>
 
               <input type="submit" value="Register Now!" id="register-register" name="register"/>
             </div>
@@ -130,8 +129,9 @@
         </form>
         </div>
       </div>
+
       <div id = "register-login">
-      Already have an account? <a href="login.html">Click to Login</a>
+      Already have an account? <u>Click to Login</u>
       </div>
     </main>
 
