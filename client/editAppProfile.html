@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>JobLine</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="resources/header.css">
+		<link rel="stylesheet" type="text/css" href="resources/editAppProfile.css">
+		<link rel="stylesheet" type="text/css" href="resources/footer.css">
+		<!-- font awesome version 4.7.0 -->
+		<link rel="stylesheet" type="text/css" href="resources/font-awesome/css/font-awesome.min.css">
+		<!--<script type="text/javascript" src="resources/addPosition.js"></script>-->
+	</head>
+	<body>
+		<header id="head">
+			<div id="logo">
+				<a href="/"><img src="logo.png" alt="logo"></a>
+				<!-- we don't have this yet -->
+				<!-- background is red so we can visualize the space it's going to occupy -->
+			</div>
+			<div id="head-top">
+				<nav>
+					<ul>
+						<li>
+							<a href="about.html" target="_self">About Us</a>
+						</li>
+						<li class="vbar">
+							|
+						</li>
+						<li>
+							<a href="explore.html" target="_self">Explore Jobs</a>
+						</li>
+						<li class="vbar">
+							|
+						</li>
+						<li>
+							<a href="register.html" target="_self">Register</a>
+						</li>
+						<li class="vbar">
+							|
+						</li>
+						<li>
+							<a href="login.html" target="_self">Login</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div id="head-bottom">
+				<span id="slogan">"The universal job application!"</span>
+			</div>
+		</header>
+		<main>
+			<form id="edit-profile">
+				<fieldset id="contact-info">
+					<legend>Contact Information</legend>
+					<div>
+						<div class="full-name">
+							<label for="prefix">Prefix</label>
+							<br>
+							<input id="prefix" name="prefix" type="text"></input>
+						</div>
+						<div class="full-name">
+							<label for="fname">First name <span class="required">*</span></label>
+							<br>
+							<input id="fname" name="fname" type="text"></input>
+						</div>
+						<div class="full-name">
+							<label for="mname">Middle name</label>
+							<br>
+							<input id="mname" name="mname" type="text"></input>
+						</div>
+						<div class="full-name">
+							<label for="lname">Last name <span class="required">*</span></label>
+							<br>
+							<input id="lname" name="lname" type="text"></input>
+						</div>
+						<div class="full-name">
+							<label for="suffix">Suffix</label>
+							<br>
+							<input id="suffix" name="suffix" type="text"></input>
+						</div>
+						<div class="full-name">
+							<label for="pname">Preferred name</label>
+							<br>
+							<input id="pname" name="pname" type="text"></input>
+						</div>
+					</div>
+					<div>
+						<div class="location">
+							<label for="address1">Address <span class="required">*</span></label>
+							<br>
+							<input id="address1" name="address1" type="text"></input>
+						</div>
+						<div class="location">
+							<label for="address2">Address 2</label>
+							<br>
+							<input id="address2" name="address2" type="text"></input>
+						</div>
+						<div class="location">
+							<label for="country">Country</label>
+							<br>
+							<input id="country" name="country" type="text"></input>
+						</div>
+						<div class="location">
+							<label for="state">State/Province</label>
+							<br>
+							<input id="state" name="state" type="text"></input>
+						</div>
+						<div class="location">
+							<label for="city">City/Town</label>
+							<br>
+							<input id="city" name="city" type="text"></input>
+						</div>
+						<div class="location">
+							<label for="zip">Zip Code</label>
+							<br>
+							<input id="zip" name="zip" type="text"></input>
+						</div>
+					</div>
+					<div>
+						<div class="phone">
+							<label for="home">Home Phone</label>
+							<br>
+							<input id="home" name="home" type="text"></input>
+						</div>
+						<div class="phone">
+							<label for="cell">Cell Phone</label>
+							<br>
+							<input id="cell" name="cell" type="text"></input>
+						</div>
+						<div class="phone">
+							<label for="work">Work Phone</label>
+							<br>
+							<input id="work" name="work" type="text"></input>
+						</div>
+					</div>
+					<div>
+						<div class="other">
+							<label for="email">Email</label>
+							<br>
+							<input id="email" name="email" type="text"></input>
+						</div>
+						<div class="other">
+							<label for="website">Website</label>
+							<br>
+							<input id="website" name="website" type="text"></input>
+						</div>
+					</div>
+				</fieldset>
+				<fieldset id="experience">
+					<legend>Work Experience</legend>
+					<div>
+						<div class="position">
+							<label for="org">Organization</label>
+							<br>
+							<input id="org" name="org" type="text"></input>
+						</div>
+						<div class="position">
+							<label for="title">Title</label>
+							<br>
+							<input id="title" name="title" type="text"></input>
+						</div>
+					</div>
+					<div>
+						<div class="date">
+							<label for="start-date">Start Date</label>
+							<br>
+							<input id="start-date" name="start-date" type="date"></input>
+						</div>
+						<div class="date">
+							<label for="end-date">End Date</label>
+							<br>
+							<input id="end-date" name="end-date" type="date"></input>
+						</div>
+						<div class="date">
+							<input type="checkbox" id="is-working" name="is-working"></input>
+							<label for="is-working">I currently work here.</label>
+						</div>
+					</div>
+					<div>
+						<div class="desc">
+							<label for="job-desc">Job description</label>
+							<br>
+							<textarea id="job-desc" name="job-desc" form="edit-profile" rows="5" cols="46"></textarea>
+						</div>
+					</div>
+				</fieldset>
+				<fieldset id="education">
+					<legend>Education</legend>
+					<div>
+						<div class="edu-info">
+							<label for="major">Major</label>
+							<br>
+							<input id="major" name="major" type="text"></input>
+						</div>
+						<div class="edu-info">
+							<label for="degree">Degree</label>
+							<br>
+							<input id="degree" name="degree" type="text"></input>
+						</div>
+						<div class="edu-info">
+							<label for="school">School</label>
+							<br>
+							<input id="school" name="school" type="text"></input>
+						</div>
+					</div>
+					<div>
+						<div class="date">
+							<label for="start-date2">Start Date</label>
+							<br>
+							<input id="start-date2" name="start-date2" type="date"></input>
+						</div>
+						<div class="date">
+							<label for="end-date2">End Date</label>
+							<br>
+							<input id="end-date2" name="end-date2" type="date"></input>
+						</div>
+					</div>
+				</fieldset>
+				<fieldset id="bottom">
+					<div id="asterisk">
+						<span class="required">*</span> = required
+					</div>
+					<input id="submit" name="submit" type="submit" value="Save"></input>
+				</fieldset>
+			</form>
+		</main>
+		<footer id="foot">
+			<div id="footTop">
+				<nav class="footList">
+					<a class="footLink" href="about.html">About us</a> | 
+					<a class="footLink" href="careers.html">Careers</a> | 
+					<a class="footLink" href="contact.html">Contact us</a> | 
+					<a class="footLink" href="privacy.html">Privacy Policy</a> | 
+					<a class="footLink" href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square fa-lg" aria-hidden="true" title="Friend us on Facebook!"></i></a>
+					<a class="footLink" href="https://twitter.com" target="_blank"><i class="fa fa-twitter-square fa-lg" aria-hidden="true" title="Follow us on Twitter!"></i></a>
+					<a class="footLink" href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true" title="Connect with us on LinkedIn!"></i></a>
+				</nav>
+			</div>
+			<div id="copyright">
+				&copy; JobLine 2016
+			</div>
+		</footer>
+	</body>
+</html>
