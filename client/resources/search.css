@@ -114,3 +114,8 @@ body{
 	width: 90px; 
 	height: 40px;
 }
+#fmg{
+	position: relative; 
+	top: 5px; 
+	left: 3px;
+}
