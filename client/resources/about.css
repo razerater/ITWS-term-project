@@ -1,0 +1,59 @@
+body{
+	margin: 0; 
+	font-family: Arial; 
+}
+
+main{
+	padding: 30px; 
+}
+
+.phil{
+	padding: 30px;
+ 
+	position: relative; 
+
+	
+	/*border-radius: 5px; */
+	background-color: #64B5F6;
+	padding-top: 0px;
+	border: solid 1px black; 
+	color: #eee;
+	margin-bottom: 10px;
+}
+
+.history{
+	padding: 30px;
+ 
+	position: relative; 
+
+	
+	/*border-radius: 5px; */
+	background-color: #64B5F6;
+	padding-top: 0px;
+	border: solid 1px black; 
+	color: #eee;
+	margin-bottom: 10px;
+}
+
+.partners{
+	padding: 30px;
+ 
+	position: relative; 
+
+
+	/*border-radius: 5px; */
+	background-color: #64B5F6;
+	padding-top: 0px;
+	border: solid 1px black; 
+	color: #eee;
+	margin-bottom: 10px;
+}
+
+.desc a{
+	text-decoration: none; 
+	color: grey; 
+}
+.desc a:hover{
+	text-decoration: none; 
+	color: red; 
+}
