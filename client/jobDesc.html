@@ -1,11 +1,10 @@
 <!DOCTYPE html> 
 <html lang = "en"> 
   <head> 
-     <title>Results!</title> 
+     <title>Alphabet CEO</title> 
      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
      <script type="text/javascript" src="resources/jquery-3.1.1.min.js"></script>
-     <script type="text/javascript" src="resources/search.js"></script>
-     <link rel="stylesheet" href="" type="text/css"/>
+     <script type="text/javascript" src="resources/search.js"></script> <!-- might have to change this to a diff javascript --> 
 	 <link rel="stylesheet" type="text/css" href="resources/header.css">
 	 <link rel="stylesheet" type="text/css" href="resources/footer.css">
 	 <link rel="stylesheet" type="text/css" href="resources/search.css">
@@ -20,62 +19,47 @@
 				<!-- we don't have this yet -->
 				<!-- background is red so we can visualize the space it's going to occupy -->
 			</div>
-			<div id="head-top">
-				<nav>
-					<ul>
-						<li>
-							<a href="about.html" target="_self">About Us</a>
-						</li>
-						<li class="vbar">
-							|
-						</li>
-						<li>
-							<a href="explore.html" target="_self">Explore Jobs</a>
-						</li>
-						<li class="vbar">
-							|
-						</li>
-						<li>
-							<a href="register.html" target="_self">Register</a>
-						</li>
-						<li class="vbar">
-							|
-						</li>
-						<li>
-							<a href="login.html" target="_self">Login</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-			<div id="head-bottom">
-				<span id="slogan">"The universal job application!"</span>
-			</div>
 		</header>
-		
-		<!--Search result table goes here --> 
-		
-		<div id="header">
-			<h2 align="center"><em>Search results...</em></h2> 
-		</div> 
-		
-		<div id="resultTable">
-		  <table> 
-		    <tr> 
-			  <th>Company</th> 
-			  <th>Location</th>
-			  <th>Position</th>
-			  <th>Description</th>
-			</tr> 
-			<!-- Over here is where we'll add to the table using JS, activate a function on load to modify this table similar to code in the AJAX lab. -->
-		    <!-- I'll put a placeholder row for now, in case we don't get to it before the presentation --> 
-			<tr class = "clickableRow" data-href = "jobDesc.html"> 
-			  <td>Alphabet</td> 
-			  <td>Mountain View, CA, USA</td> 
-			  <td>CEO</td> 
-			  <td>Cool guy wanted!</td> 
-			</tr> 
-		  </table> 
-		</div>
+		<main>
+			<!-- Job Description stuff goes here --> 
+			<div id = "wrapper"> 
+			  <div class = "companyName"> Alphabet </div> 
+			  <span class = "position">Position: CEO</span> 
+			  <span class = "jobType">Type: Full-Time</span>
+			  <div class = "jobBox"> 
+				<div class = "innerTextTitle">
+				  Job Description
+				</div> 
+				<div class = "desc"> 
+				  This position is to be the CEO of Alphabet. That is no easy task. 
+				  Unfortunetly, our old CEO resigned due to realizing he has enough 
+				  money in his savings account to last him and his great-grandkids 
+				  alll of their lives. GG Larry Page. 
+				</div> 
+				<div class = "innerTextTitle">
+				  Location 
+				</div> 
+				<div class = "desc"> 
+				  - 1600 Amphitheatre Parkway, Mountain View, CA
+				</div> 
+				<div class = "innerTextTitle">
+				  Skills
+				</div> 
+				<ul class = "skills"> 
+				  <li>Be cool.</li> 
+				  <li>Be able to do work.</li> 
+				  <li>Preferred: know how to breed goats.</li> 
+				</ul> 
+				
+			  </div>
+			  <div class = "deadline">
+				Deadline: December 31st, 2016
+			  </div> 
+			  <div class = "applyBut"> 
+				<button type="button" id = "applyButton">Apply now!</button> 
+			  </div> 
+			</div> 
+		</main>
 		
 		<footer id="foot">
 			<div id="footTop">
