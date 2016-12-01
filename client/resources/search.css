@@ -1,3 +1,8 @@
+body{
+	margin: 0; 
+	font-family: Arial; 
+}
+
 #header h2{
 	margin: 0; 
 	font-family: Arial;
@@ -32,4 +37,78 @@
 
 #resultTable td{
 	text-align: center; 
+}
+
+#wrapper{
+	margin: auto; 
+	width: 70%; 
+	height: 80%; 
+	/* border: solid 2px blue; */ 
+}
+
+.companyName{
+	font-size: 20px; 
+	text-decoration: underline; 
+	padding: 10px; 
+}
+
+.position{
+	margin-left: 5%; 
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+.jobBox{
+	margin-left: 5%; 
+	position: relative; 
+	width: 89%; 
+	height: 100%; 
+	border: solid 2px #eee; 
+	border-radius: 5px; 
+	background-color: #64B5F6;
+	padding-top: 0px;
+	border: solid 5px darkgrey; 
+}
+
+.skills{
+	margin-left: 5%; 
+	color: white; 
+	padding: 2px; 
+	position: relative; 
+	bottom: 20px; 
+}
+
+.jobType{
+	margin-right: 6%; 
+	float: right; 
+	position: relative; 
+	font-size: 20px; 
+}
+.innerTextTitle{
+	color: white; 
+	text-decoration: underline; 
+	font-size: 20px; 
+	padding: 20px; 
+}
+
+.desc{
+	margin-left: 5%; 
+	color: white; 
+	padding: 2px; 
+}
+
+.deadline{
+	float: right; 
+	margin-right: 6%; 
+}
+
+#applyButton{
+	background-color: #64B5F6;
+	color: white; 
+	float: right; 
+	position: relative; 
+	top: 40px; 
+	left: 220px;
+	width: 90px; 
+	height: 40px;
 }
