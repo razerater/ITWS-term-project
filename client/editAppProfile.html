@@ -13,7 +13,9 @@
 	<body>
 		<header id="head">
 			<div id="logo">
-				<a href="index.html"><img src="resources/images/logo.png" alt="logo" height="100%" width="50%"></a>
+				<a href="/"><img src="logo.png" alt="logo"></a>
+				<!-- we don't have this yet -->
+				<!-- background is red so we can visualize the space it's going to occupy -->
 			</div>
 			<div id="head-top">
 				<nav>
@@ -25,7 +27,7 @@
 							|
 						</li>
 						<li>
-							<a href="search.html" target="_self">Explore Jobs</a>
+							<a href="explore.html" target="_self">Explore Jobs</a>
 						</li>
 						<li class="vbar">
 							|
@@ -94,22 +96,22 @@
 							<input id="address2" name="address2" type="text"></input>
 						</div>
 						<div class="location">
-							<label for="country">Country</label>
+							<label for="country">Country <span class="required">*</span></label>
 							<br>
 							<input id="country" name="country" type="text"></input>
 						</div>
 						<div class="location">
-							<label for="state">State/Province</label>
+							<label for="state">State/Province <span class="required">*</span></label>
 							<br>
 							<input id="state" name="state" type="text"></input>
 						</div>
 						<div class="location">
-							<label for="city">City/Town</label>
+							<label for="city">City/Town <span class="required">*</span></label>
 							<br>
 							<input id="city" name="city" type="text"></input>
 						</div>
 						<div class="location">
-							<label for="zip">Zip Code</label>
+							<label for="zip">Zip Code <span class="required">*</span></label>
 							<br>
 							<input id="zip" name="zip" type="text"></input>
 						</div>
@@ -133,7 +135,7 @@
 					</div>
 					<div>
 						<div class="other">
-							<label for="email">Email</label>
+							<label for="email">Email <span class="required">*</span></label>
 							<br>
 							<input id="email" name="email" type="text"></input>
 						</div>
@@ -148,24 +150,24 @@
 					<legend>Work Experience</legend>
 					<div>
 						<div class="position">
-							<label for="org">Organization</label>
+							<label for="org">Organization <span class="required">*</span></label>
 							<br>
 							<input id="org" name="org" type="text"></input>
 						</div>
 						<div class="position">
-							<label for="title">Title</label>
+							<label for="title">Title <span class="required">*</span></label>
 							<br>
 							<input id="title" name="title" type="text"></input>
 						</div>
 					</div>
 					<div>
 						<div class="date">
-							<label for="start-date">Start Date</label>
+							<label for="start-date">Start Date <span class="required">*</span></label>
 							<br>
 							<input id="start-date" name="start-date" type="date"></input>
 						</div>
 						<div class="date">
-							<label for="end-date">End Date</label>
+							<label for="end-date">End Date <span class="required">*</span></label>
 							<br>
 							<input id="end-date" name="end-date" type="date"></input>
 						</div>
@@ -176,7 +178,7 @@
 					</div>
 					<div>
 						<div class="desc">
-							<label for="job-desc">Job description</label>
+							<label for="job-desc">Job description <span class="required">*</span></label>
 							<br>
 							<textarea id="job-desc" name="job-desc" form="edit-profile" rows="5" cols="46"></textarea>
 						</div>
@@ -186,29 +188,29 @@
 					<legend>Education</legend>
 					<div>
 						<div class="edu-info">
-							<label for="major">Major</label>
+							<label for="major">Major <span class="required">*</span></label>
 							<br>
 							<input id="major" name="major" type="text"></input>
 						</div>
 						<div class="edu-info">
-							<label for="degree">Degree</label>
+							<label for="degree">Degree <span class="required">*</span></label>
 							<br>
 							<input id="degree" name="degree" type="text"></input>
 						</div>
 						<div class="edu-info">
-							<label for="school">School</label>
+							<label for="school">School <span class="required">*</span></label>
 							<br>
 							<input id="school" name="school" type="text"></input>
 						</div>
 					</div>
 					<div>
 						<div class="date">
-							<label for="start-date2">Start Date</label>
+							<label for="start-date2">Start Date <span class="required">*</span></label>
 							<br>
 							<input id="start-date2" name="start-date2" type="date"></input>
 						</div>
 						<div class="date">
-							<label for="end-date2">End Date</label>
+							<label for="end-date2">End Date <span class="required">*</span></label>
 							<br>
 							<input id="end-date2" name="end-date2" type="date"></input>
 						</div>
