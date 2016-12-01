@@ -1,6 +1,5 @@
 body{
-	font-family: Arial; 
-	margin: 0;
+	font-family: Arial, Helvetica, sans-serif; 
 }
 .choice-centered{
 	padding-top: 100px;
@@ -26,16 +25,10 @@ body{
 	width: 300px;
 	padding-left: 30px;
 }
-.choice-block1:hover{
-	cursor: pointer;
-}
 .choice-block2{
 	display: inline;
 	float: right;
 	width: 300px;
-}
-.choice-block2:hover{
-	cursor: pointer;
 }
 #register-company{
 	margin-top: 100px;
@@ -44,7 +37,6 @@ body{
   margin-right: auto;
   border: medium solid;
 	padding-bottom: 10px;
-	margin-bottom: 100px;
 	border-radius: 10px;
 }
 #register-candidate{
@@ -54,7 +46,6 @@ body{
   margin-right: auto;
   border: medium solid;
 	padding-bottom: 10px;
-	margin-bottom: 100px;
 	border-radius: 10px;
 }
 .register-choiceCandidate{
@@ -111,9 +102,6 @@ img.choiceImage{
 	color: white;
 	border: none;
 }
-#register-register:hover{
-	cursor: pointer;
-}
 #register-applyID{
 	background-color: #3793d9;
 	color: white;
@@ -125,11 +113,8 @@ img.choiceImage{
 	border: none;
 	font-family: Arial;
 }
-#register-applyID:hover{
-	cursor: pointer;
-}
 #register-login{
-	margin: 45px 0 0 0;
+	margin: 100px 0 0 0;
 	padding: 10px 0 10px 0;
 	text-align: center;
 	background-color: grey;
@@ -138,9 +123,7 @@ img.choiceImage{
 	clear:left;
 	float:left;
 	width: 100%;
-}
-#register-login:hover{
-	cursor: pointer;
+
 }
 input.register{
 	display: inline;

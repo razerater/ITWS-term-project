@@ -11,8 +11,7 @@ body{
 }
 #logo {
 	float: left;
-	width: 24.5%;
-	border-right: 2px solid black;
+	width: 25%;
 	height: 150px;
 	background-color: white;
 }

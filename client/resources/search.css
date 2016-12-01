@@ -7,8 +7,6 @@ body{
 	margin: 0; 
 	font-family: Arial;
 	font-size: 2.6em;
-	position: relative; 
-	top: 20px; 
 }
 
 #firstSearch{
@@ -32,10 +30,7 @@ body{
 	border-collapse: collapse; 
 	font-size: 25px;
 }
-#resultTable{
-	position: relative; 
-	top: 40px;
-}
+
 #resultTable table{
 	width: 100%; 
 }
@@ -117,6 +112,7 @@ body{
 	width: 90px; 
 	height: 40px;
 }
+
 #fmg{
 	position: relative; 
 	top: 5px; 

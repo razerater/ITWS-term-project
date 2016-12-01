@@ -45,9 +45,6 @@ fieldset{
 	color: white;
 	border: none;
 }
-#applyID-applyID:hover{
-	cursor: pointer;
-}
 input.applyID{
 	display: inline;
 	font-size: 15px;
