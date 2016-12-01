@@ -1,126 +1,104 @@
 <!DOCTYPE html> 
-<html lang = "en"> 
-  <head> 
-     <title>Your profile</title> 
-     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-     <script type="text/javascript" src="resources/jquery-3.1.1.min.js"></script>
-     <script type="text/javascript" src=""></script>
-     <link rel="stylesheet" href="" type="text/css"/>
-	 <link rel="stylesheet" type="text/css" href="resources/footer.css">
-	 <link rel="stylesheet" type="text/css" href="resources/search.css">
-	 <link rel="stylesheet" type="text/css" href="resources/profile.css">
-  </head> 
-  <body> 
-  <!-- Header stuff will go here --> 
-  <!-- 
-	<header id="head">
+<html lang="en"> 
+	<head> 
+		<title>Your profile</title> 
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<script type="text/javascript" src="resources/jquery-3.1.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="resources/companyProfile.css">
+		<link rel="stylesheet" type="text/css" href="resources/footer.css">
+		<script type="text/javascript" src="resources/profile.js"></script>
+		<!-- font awesome version 4.7.0 -->
+		<link rel="stylesheet" type="text/css" href="resources/font-awesome/css/font-awesome.min.css">
+	</head> 
+	<body> 
+		<header>
 			<div id="logo">
-				<a href="/"><img src="logo.png" alt="logo"></a>
-				<!-- we don't have this yet -->
-				<!-- background is red so we can visualize the space it's going to occupy 
-			</div>
-			<div id="head-top">
-				<nav>
-					<ul>
-						<li>
-							<a href="about.html" target="_self">About Us</a>
-						</li>
-						<li class="vbar">
-							|
-						</li>
-						<li>
-							<a href="explore.html" target="_self">Explore Jobs</a>
-						</li>
-						<li class="vbar">
-							|
-						</li>
-						<li>
-							<a href="register.html" target="_self">Register</a>
-						</li>
-						<li class="vbar">
-							|
-						</li>
-						<li>
-							<a href="login.html" target="_self">Login</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-			<div id="head-bottom">
-				<span id="slogan">"The universal job application!"</span>
-			</div>
-		</header> --> 
-		<!-- <header id="profileHead">
-		  <span id="logo">
-			<a href="/"><img src="logo.png" alt="logo"></a>
-			<!-- we don't have this yet -->
-			<!-- background is red so we can visualize the space it's going to occupy 
-		  </span>
-		  <span id = "headSearch"> 
-		    <form id="quickSearch" name="quickSearch" action="#" method="post" onsubmit="PLACEHOLDER FOR SEARCH JS">
-			  <fieldset>
-			    <div class="quickData">
-				  <div class = "value"><input type="text" size="40" value="" name="key" id="key" placeholder = "Enter search terms here..."/></div>
-				<div><input type="image" src="resources/mg.png" name="mg" class="mg" id="mg" height="50" width="50"/></div>
-				</div> 
-			  </fieldset>
-			 
-			</form>
-		  
-		  </span>  
-		
-		
-		</header> -->
-		
-		<header id="head">
-		  <div id="logo">
-				<a href="/"><img src="logo.png" alt="logo"></a>
+				<a href="index.html"><img src="resources/images/logo.png" alt="logo" height="100%" width="50%"></a>
 				<!-- we don't have this yet -->
 				<!-- background is red so we can visualize the space it's going to occupy -->
-		  </div>
-<!-- 		  <div>
-		    <form action="searchResult.html" id="quickSearch">
-			  <input type="text" name="keys" placeholder="Enter keywords here..."/>
-			</form> 
-		  </div> -->
-		</header>
-		
-		<!-- <div id="appStatus"> 
-		  
-		</div> 
-		
-		<span id="deadlines">
-		
-		</span>  -->
-		
-		<div id="leftSide">
-		  <div id="appStatus"> 
-		    <h4 align="center">Application status!</h4>
-		  </div> 
-		  
-		  <div id="deadlines"> 
-		    <h4 align="center">Deadlines!</h4>
-		  </div> 
-		</div>
-			
-		<footer id = "foot"> 
-		  <div id="footTop">
-				<nav class = "footList">
-					<a class = "footLink" href = "about.html">About us</a> | 
-					<a class = "footLink" href = "careers.html">Careers</a> |
-					<a class = "footLink" href = "contact.html">Contact us</a> | 
-					<a class = "footLink" href = "privacy.html">Privacy Policy</a> | 
-					<a class = "footLink" href = "www.facebook.com" target = "_blank"><img src = "resources/FBLogo.png" name = "Fb" height = "30" width = "30"><a href = "www.facebook.com"></a>
-					<a class = "footLink" href = "www.twitter.com" target = "_blank"><img src = "resources/TwitLogo.png" name = "Twit" height = "30" width = "30"></a>
-					<a class = "footLink" href = "www.linkedin.com" target = "_blank"><img src = "resources/LinkedInLogo.png" name = "Linked" height = "30" width = "30"></a>
-				</nav>	
 			</div>
-		<div id = "copyright"> 
-			©JobLine 2016
-		</div> 
-	</footer> 
-  
-  </body> 
-  
-  
-</html> 
+			<div id="thanks">
+				<a id = "searchLink"href = "search.html">Click here to explore jobs...<img src="resources/mg.png" height="25px" width="25px" alt = "mg" id = "mg"></a>
+			</div>
+			<div id="greeting">
+				<img id="mini-company-logo" src="resources/images/candidate.png" width="40">&nbsp;&nbsp;Welcome, Raz!
+			</div>
+		</header>
+		<main>
+			<div id="leftSide">
+				<div id = "appStatus"> 
+				<h3 class = "sideTitle">Application statuses</h3>
+					<div id="example-position">
+						<ul>
+							<li class = "app">CEO of Alphabet: <span class = "goodNews">Expect contact!</span></li>
+							<li class = "app">Barista at Starbucks: <span class = "badNews">Denied.</span></li>
+						</ul>
+					</div>
+				</div>
+				<div id = "deadlines">
+					<h3 class = "sideTitle">Upcoming Deadlines</h3>
+					<ul>
+						<li class = "app">Nothing to report!</li>
+					</ul> 
+				
+				</div> 
+				
+			</div>
+			<div id="line"></div>
+			<div id="profile-page">
+				<img id="google-logo" src="resources/images/candidate.png" alt="Your logo" width="120">
+				<h1 id = "name">Raz Reed</h1>
+				<br><br><br>
+				<p id="description">
+					Description of why you are an amazing candidate! Should be a short bio about your company and your mission statement.
+				</p>
+				<button id="edit">Edit information</button>
+				<button id="add-pos" href = 'RazResume.html'>View resume</button>
+				<div id="canInfo">
+					<h2>Work Experience:</h2>
+					<dl>
+						<dt>- CEO of Microsoft, Inc. from June 2016 - July 2016</dt>
+
+						<dt>- Employee at Commons Dining Hall from June 2015 - Dec 2015</dt>
+
+					</dl>
+					
+					<h2>Education:</h2>
+					<dl>
+						<dt>- Rensselaer Polytechnic Institute from September 2016</dt>
+
+						<dt>- Philadelphia Professional Goat Breeding Craft School Class of 2016</dt>
+
+					</dl>
+					<h2>Skills:</h2>
+					<dl>
+						<dt>- Being awesome!</dt>
+
+						<dt>- HTML 5 </dt>
+						<dt>- JavaScript </dt>
+						<dt>- Python</dt>
+
+					</dl>
+
+
+				</div>
+			</div>
+		</main>
+		<footer id="foot">
+			<div id="footTop">
+				<nav class="footList">
+					<a class="footLink" href="about.html">About us</a> | 
+					<a class="footLink" href="careers.html">Careers</a> | 
+					<a class="footLink" href="contact.html">Contact us</a> | 
+					<a class="footLink" href="privacy.html">Privacy Policy</a> | 
+					<a class="footLink" href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square fa-lg" aria-hidden="true" title="Friend us on Facebook!"></i></a>
+					<a class="footLink" href="https://twitter.com" target="_blank"><i class="fa fa-twitter-square fa-lg" aria-hidden="true" title="Follow us on Twitter!"></i></a>
+					<a class="footLink" href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true" title="Connect with us on LinkedIn!"></i></a>
+				</nav>
+			</div>
+			<div id="copyright">
+				&copy; JobLine 2016
+			</div>
+		</footer>
+	</body>
+</html>
