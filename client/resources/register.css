@@ -115,7 +115,7 @@ img.choiceImage{
 	font-family: Arial;
 }
 #register-login{
-	margin: 100px 0 0 0;
+	margin: 85px 0 0 0;
 	padding: 10px 0 10px 0;
 	text-align: center;
 	background-color: grey;
@@ -124,6 +124,7 @@ img.choiceImage{
 	clear:left;
 	float:left;
 	width: 100%;
+	bottom: 65px;
 }
 input.register{
 	display: inline;
