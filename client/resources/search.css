@@ -32,7 +32,10 @@ body{
 	border-collapse: collapse; 
 	font-size: 25px;
 }
-
+#resultTable{
+	position: relative; 
+	top: 40px;
+}
 #resultTable table{
 	width: 100%; 
 }
