@@ -1,10 +1,14 @@
+body{
+	font-family: Arial; 
+	margin: 0;
+}
 .viewApp{
 	padding: 50px 100px 50px 100px;
 }
 .viewApp-appbox{
 	display: inline;
 	float: left;
-	margin: 50px;
+	margin: 30px;
 	border: black solid thin;
 	border-radius: 10px;
 	padding: 5px;
@@ -43,8 +47,8 @@ img.viewApp-profilePic{
 .applyingFor{
 	text-align: left;
 	clear:left;
-	padding: 0 10px 10px 10px;
+	padding: 10PX 10px 10px 10px;
 }
 p.viewApp-link{
-	margin:5px 0 0 10px;
+	margin:0 0 10px 10px;
 }
