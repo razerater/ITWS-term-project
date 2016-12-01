@@ -10,7 +10,7 @@
 	float: left;
 	width: 25%;
 	height: 150px;
-	background-color: red;
+	background-color: white;
 }
 #head-top {
 	float: left;
@@ -52,4 +52,8 @@
 	top: 22px;
 	font-style: italic;
 	font-size: 1.2em;
+}
+
+#logo img{
+	margin-left: 25%;
 }
