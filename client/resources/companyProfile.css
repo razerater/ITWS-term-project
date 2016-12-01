@@ -12,7 +12,10 @@ header {
 	float: left;
 	width: 20%;
 	height: 100px;
-	background-color: red;
+	background-color: white;
+}
+#logo img{
+	margin-left: 25%; 
 }
 #thanks {
 	float: left;
