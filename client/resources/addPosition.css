@@ -10,8 +10,13 @@ header {
 }
 #logo {
 	float: left;
-	width: 19.5%;
+	width: 20%;
 	height: 100px;
+	background-color: white;
+}
+
+#logo img{
+	margin-left: 25%; 
 }
 #thanks {
 	float: left;
