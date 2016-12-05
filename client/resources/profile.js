@@ -7,5 +7,9 @@ jQuery(document).ready(function($) {
       var url = $(this).attr('href');
       window.open(url, '_blank')
     }); 
+
+    $('#mini-company-logo').click(function() {
+      window.location='appProfile.html'; 
+    });
     
 });

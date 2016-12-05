@@ -82,3 +82,7 @@ fieldset input:not([type="checkbox"]) {
 .required {
 	color: red;
 }
+
+#mini-company-logo:hover{
+	cursor: pointer;
+}
