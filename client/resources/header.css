@@ -13,12 +13,13 @@ body{
 	float: left;
 	width: 25%;
 	height: 150px;
+	border-right: 2px solid black;
 	background-color: white;
 }
 #head-top {
 	float: left;
 	clear: right;
-	width: 75%;
+	width: 74.5%;
 	background-color: #89CFF0;
 	margin: 0 auto;
 }
