@@ -1,5 +1,6 @@
 body {
 	margin: 0;
+	padding-bottom: 65px;
 }
 main {
 	min-height: 500px;
@@ -11,7 +12,7 @@ main {
 	/* credit to http://54.67.6.95/how-to-keep-footer-at-bottom-of-page-with-css/ for footer position*/
 	width: 100%;
 	height: 65px;
-	position: relative;
+	position: fixed;
 	bottom: 0;
 	left: 0;
 }
