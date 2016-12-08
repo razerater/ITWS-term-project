@@ -4,8 +4,6 @@ window.onload = function() {
     var email = document.getElementById("app-email").value;
     var password = document.getElementById("app-password").value;
     firebase.auth().signInWithEmailAndPassword(email, password).then(function() {
-      firebase.auth().currentUser.
-      console.log(firebase.auth().currentUser);
       window.location = "appProfile.html";
     }, function(error) {
       alert(error.message);
@@ -17,7 +15,6 @@ window.onload = function() {
     var email = document.getElementById("comp-email").value;
     var password = document.getElementById("comp-password").value;
     firebase.auth().signInWithEmailAndPassword(email, password).then(function() {
-      console.log(firebase.auth().currentUser);
       window.location = "companyProfile.html";
     }, function(error) {
       alert(error.message);
