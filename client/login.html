@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 	<head>
 	    <title>Login Page - Applicant</title>
 	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -8,13 +8,17 @@
       <link rel="stylesheet" type="text/css" href="resources/footer.css">
       <script type="text/javascript" src="resources/jquery-3.1.1.min.js"></script>
       <link rel="stylesheet" type="text/css" href="resources/font-awesome/css/font-awesome.min.css">
+      <script type="text/javascript" src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+      <script type="text/javascript" src="https://www.gstatic.com/firebasejs/3.6.1/firebase-auth.js"></script>
+      <script type="text/javascript" src="https://www.gstatic.com/firebasejs/3.6.1/firebase-database.js"></script>
+      <script type="text/javascript" src="resources/init-firebase.js"></script>
+      <script type="text/javascript" src="resources/login.js"></script>
 	</head>
 
   <body>
   	<header id="head">
       <div id="logo">
         <a href="index.html"><img src="resources/images/logo.png" alt="logo" height="100%" width="50%"></a>
-        
       </div>
       <div id="head-top">
         <nav>
@@ -49,19 +53,19 @@
     </header>
 
     <main>
-    	<div class = "login-centered">
-    		<div class = "login-loginInfo">
-    			<div class = "login-type-ca1">Applicant</div>
-    			<div class = "login-type-co1">Company</div>
+    	<div class="login-centered">
+    		<div class="login-loginInfo">
+    			<div class="login-type-ca1">Applicant</div>
+    			<div class="login-type-co1">Company</div>
 
     			<form id="addFormApp" name="addFormApp" action="#" method="post">
   	        <fieldset> 
   	          <div class="formData">
-  	            <label class="login-field" for="email">Email:</label>
-  	            <div class="login-value"><input type="text" size="60" value="" name="email" id="email"/></div>
-  	            <label class="login-field" for="password">Password:</label>
-  	            <div class="login-value"><input type="text" size="60" value="" name="password" id="password"/></div>
-  	            <input type="submit" value="Login" id="login-login" name="login"/>
+  	            <label class="login-field" for="app-email">Email:</label>
+  	            <div class="login-value"><input type="email" size="60" name="app-email" id="app-email"/></div>
+  	            <label class="login-field" for="app-password">Password:</label>
+  	            <div class="login-value"><input type="password" size="60" name="app-password" id="app-password"/></div>
+  	            <input type="submit" value="Login" id="login-login" name="login"></input>
   	          </div>
   	        </fieldset>
         	</form>
@@ -71,17 +75,17 @@
         	<div class="login-goBack">Go Back</div>
     		</div>
 
-        <div class = "login-loginInfo-C">
-          <div class = "login-type-ca2">Applicant</div>
-          <div class = "login-type-co2">Company</div>
+        <div class="login-loginInfo-C">
+          <div class="login-type-ca2">Applicant</div>
+          <div class="login-type-co2">Company</div>
 
           <form id="addFormCom" name="addFormCom" action="#" method="post">
             <fieldset> 
               <div class="formData">
-                <label class="login-field" for="id">ID:</label>
-                <div class="login-value"><input type="text" size="60" value="" name="email" id="email"/></div>
-                <label class="login-field" for="password">Password:</label>
-                <div class="login-value"><input type="text" size="60" value="" name="password" id="password"/></div>
+                <label class="login-field" for="comp-email">Email:</label>
+                <div class="login-value"><input type="email" size="60" name="comp-email" id="comp-email"/></div>
+                <label class="login-field" for="comp-password">Password:</label>
+                <div class="login-value"><input type="password" size="60" name="comp-password" id="comp-password"/></div>
                 <input type="submit" value="Login" id="login-login" name="login"/>
               </div>
             </fieldset>
@@ -109,6 +113,5 @@
         &copy; JobLine 2016
       </div>
     </footer>
-    <script type="text/javascript" src="resources/login.js"></script>
 	</body>
 </html>
