@@ -18,7 +18,7 @@
   <body>
   	<header id="head">
       <div id="logo">
-        <a href="index.html"><img src="resources/images/logo.png" alt="logo" height="100%" width="50%"></a>
+        <a href="index.html"><img src="resources/images/logo.png" alt="logo" style="width:50%; height:100%;"></a>
       </div>
       <div id="head-top">
         <nav>
@@ -65,13 +65,13 @@
   	            <div class="login-value"><input type="email" size="60" name="app-email" id="app-email"/></div>
   	            <label class="login-field" for="app-password">Password:</label>
   	            <div class="login-value"><input type="password" size="60" name="app-password" id="app-password"/></div>
-  	            <input type="submit" value="Login" id="login-login" name="login"></input>
+  	            <input type="submit" value="Login" id="candi-login" name="login">
   	          </div>
   	        </fieldset>
         	</form>
 
         	<p class="login-registerNowText">Not a user?</p>
-        	<button type="button" id="login-registerNow" onclick="location.href='register.html'">Register Now!</button>
+        	<button type="button" class="login-registerNow" onclick="location.href='register.html'">Register Now!</button>
         	<div class="login-goBack">Go Back</div>
     		</div>
 
@@ -86,13 +86,13 @@
                 <div class="login-value"><input type="email" size="60" name="comp-email" id="comp-email"/></div>
                 <label class="login-field" for="comp-password">Password:</label>
                 <div class="login-value"><input type="password" size="60" name="comp-password" id="comp-password"/></div>
-                <input type="submit" value="Login" id="login-login" name="login"/>
+                <input type="submit" value="Login" id="comp-login" name="login"/>
               </div>
             </fieldset>
           </form>
 
           <p class="login-registerNowText">Not a partner?</p>
-          <button type="button" id="login-registerNow" onclick="location.href='register.html'">Register Now!</button>
+          <button type="button" class="login-registerNow" onclick="location.href='register.html'">Register Now!</button>
           <div class="login-goBack">Go Back</div>
         </div>
     	</div>

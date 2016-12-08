@@ -3,7 +3,6 @@
 	<head>
 		<title>JobLine</title>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="resources/header.css">
 		<link rel="stylesheet" type="text/css" href="resources/addPosition.css">
 		<link rel="stylesheet" type="text/css" href="resources/footer.css">
 		<!-- font awesome version 4.7.0 -->
@@ -13,25 +12,25 @@
 	<body>
 		<header>
 			<div id="logo">
-				<a href="index.html"><img src="resources/images/logo.png" alt="logo" height="100%" width="50%"></a>
+				<a href="index.html"><img src="resources/images/logo.png" alt="logo" style="width:50%; height:100%;"></a>
 			</div>
 			<div id="thanks">
 				Thanks for being a partner!
 			</div>
 			<div id="greeting">
-				<img id="mini-company-logo" src="resources/images/google-logo.png" width="40">&nbsp;&nbsp;Welcome, Google!
+				<img id="mini-company-logo" alt="mini-company-logo" src="resources/images/google-logo.png" width="40">&nbsp;&nbsp;Welcome, Google!
 			</div>
 		</header>
 		<main>
 			<form id="add-pos">
 				<label for="pos-title">Title:</label>
-				<input type="text" id="pos-title" name="pos-title"></input>
+				<input type="text" id="pos-title" name="pos-title">
 				<label for="pos-desc">Description:</label>
 				<textarea id="pos-desc" name="pos-desc" form="add-pos" rows="8" cols="80"></textarea>
 				<label>Requirements:</label> <!-- use js to make it so that when a user clicks on this label it sets a focus on the first li in #requirements-list -->
 				<ul id="requirements-list">
 					<li>
-						<input type="text"></input>
+						<input type="text">
 						<!-- fontawesome buttons that remove/add a requirement -->
 						<i class="fa fa-minus rm-req" aria-hidden="true" onclick="delet(this);"></i>
 						<i class="fa fa-plus add-req" aria-hidden="true" onclick="duplicate(this);"></i>
@@ -40,13 +39,13 @@
 				<label>Additional Questions:</label> <!-- same here but for #questions-list -->
 				<ol id="questions-list">
 					<li>
-						<input type="text"></input>
+						<input type="text">
 						<!-- fontawesome buttons that remove/add an additional question -->
 						<i class="fa fa-minus rm-ques" aria-hidden="true" onclick="delet(this);"></i>
 						<i class="fa fa-plus add-ques" aria-hidden="true" onclick="duplicate(this);"></i>
 					</li>
 				</ol>
-				<input id="submit" name="submit" type="submit" value="Save"></input>
+				<input id="submit" name="submit" type="submit" value="Save">
 			</form>
 		</main>
 		<footer id="foot">

@@ -4,8 +4,6 @@
      <title>Search for jobs!</title> 
      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
      <script type="text/javascript" src="resources/jquery-3.1.1.min.js"></script>
-     <script type="text/javascript" src=""></script>
-     <link rel="stylesheet" href="" type="text/css"/>
 	 <link rel="stylesheet" type="text/css" href="resources/header.css">
 	 <link rel="stylesheet" type="text/css" href="resources/footer.css">
 	 <link rel="stylesheet" type="text/css" href="resources/search.css">
@@ -13,12 +11,11 @@
 	<link rel="stylesheet" type="text/css" href="resources/font-awesome/css/font-awesome.min.css">
   </head> 
   <body> 
-  <!-- Header stuff will go here --> 
+
 	<header id="head">
 			<div id="logo">
-				 <a href="index.html"><img src="resources/images/logo.png" alt="logo" height="100%" width="50%"></a>
-				<!-- we don't have this yet -->
-				<!-- background is red so we can visualize the space it's going to occupy -->
+				 <a href="index.html"><img src="resources/images/logo.png" alt="logo" style="width:50%; height:100%;"></a>
+
 			</div>
 			<div id="head-top">
 				<nav>
@@ -55,18 +52,19 @@
 		<main>
 			<!-- Search stuff starts here --> 
 			<div id="headerSearch">
-				<h2 align="center" style="position: relative; top: 20px;"><em>Search for jobs!</em></h2> 
+				<h2 style="text-align:center; position: relative; top: 20px;"><em>Search for jobs!</em></h2> 
 			</div> 
 			
 			<div id="firstSearch"> 
-				<form id="byKey" name="byKey" action="#" method="post" onsubmit = "PLACEHOLDER FOR JS">
+				<form id="byKey" name="byKey" action="#" method="post">
 				<fieldset>
 				  <legend>Search here:</legend> 
 					<div class="formData">
 					 <label class="field" for = "keys">By keyword:</label>
-					 <div class = "value"><input type = "text" size = "60" value="" name="keys" id="keys"/><a href = "searchResult.html"><img src="resources/mg.png" id="fmg" name="mg" height="20" width="20" onclick="PLACEHOLDER FOR JS"></a></div>
+					 <div class = "value"><input type = "text" size = "60" value="" name="keys" id="keys"/><img src="resources/mg.png" alt = "searchGlass" height="20" width="20" onclick="validate()"></div>
+
 					  <label class="field" for = "locs">By location:</label>
-					 <div class = "value"><input type = "text" size = "60" value="" name="keys" id="locs"/><a href = "searchResult.html"><img src="resources/mg.png" id= "fmg" name="mg" height="20" width="20" onclick="PLACEHOLDER FOR JS"></a></div>
+					 <div class = "value"><input type = "text" size = "60" value="" name="locs" id="locs"/><img src="resources/mg.png"  alt = "searchGlass" height="20" width="20" onclick="validate()"></div>
 
 					</div>
 				</fieldset>
@@ -89,8 +87,7 @@
 				&copy; JobLine 2016
 			</div>
 		</footer>
-	</footer> 
-  
+  	<script type="text/javascript" src="resources/search.js"></script>
   </body> 
   
   
