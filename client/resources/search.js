@@ -19,3 +19,16 @@ jQuery(document).ready(function($) {
     }); 
     
 });
+
+function validate() {
+  var message = '';
+
+  if (document.getElementById('keys').innerHTML == "" && document.getElementById('locs').innerHTML == ""){
+    alert("You must enter a field for searching")
+  }
+
+  else{
+    window.location='searchResult.html';
+  }
+}
+ 

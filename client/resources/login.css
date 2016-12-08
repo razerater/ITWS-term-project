@@ -85,15 +85,23 @@ body{
 fieldset{
 	border: none;
 }
-#login-login{
+#candi-login{
 	padding: 0 15px 0 15px;
 	font-size: 2em;
 	float: right;
 }
-#login-login:hover{
+#comp-login{
+	padding: 0 15px 0 15px;
+	font-size: 2em;
+	float: right;
+}
+#candi-login:hover{
 	cursor: pointer;
 }
-#login-registerNow{
+#comp-login:hover{
+	cursor: pointer;
+}
+.login-registerNow{
 	display: inline;
 	padding: 0 10px 0 10px;
 	margin-right: 10px;
@@ -101,7 +109,7 @@ fieldset{
 	float: right;
 	text-align: right;
 }
-#login-registerNow:hover{
+.login-registerNow:hover{
 	cursor: pointer;
 }
 p.login-registerNowText{
