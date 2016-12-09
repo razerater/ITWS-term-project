@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 	<head>
 	    <title>Register</title>
 	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -8,13 +8,17 @@
       <link rel="stylesheet" type="text/css" href="resources/footer.css">
       <script type="text/javascript" src="resources/jquery-3.1.1.min.js"></script>
       <link rel="stylesheet" type="text/css" href="resources/font-awesome/css/font-awesome.min.css">
+      <script type="text/javascript" src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+      <script type="text/javascript" src="https://www.gstatic.com/firebasejs/3.6.1/firebase-auth.js"></script>
+      <script type="text/javascript" src="https://www.gstatic.com/firebasejs/3.6.1/firebase-database.js"></script>
+      <script type="text/javascript" src="resources/init-firebase.js"></script>
+      <script type="text/javascript" src="resources/register.js"></script>
 	</head>
 
   <body>
   	<header id="head">
       <div id="logo">
         <a href="index.html"><img src="resources/images/logo.png" alt="logo" height="100%" width="50%"></a>
-
       </div>
       <div id="head-top">
         <nav>
@@ -51,43 +55,41 @@
     <main>
 
     	<div class="choice-centered">
-
         <div class="choice-block1">
           <img class="choiceImage" src="resources/images/candidate.png" alt="candidate">
-          <div class = "register-choiceCandidate">I'm a Candidate</div>
+          <div class="register-choiceCandidate">I'm a Candidate</div>
         </div>
-
         <div class="choice-block2">
           <img class="choiceImage" src="resources/images/company.png" alt="company">
-          <div class = "register-choiceCompany">I'm a Company</div>
+          <div class="register-choiceCompany">I'm a Company</div>
         </div>
       </div>
       
       <div id="register-candidate">
         <div class="register-type">Candidate</div>
-        <form id="register-candidateForm" name="register-candidateForm" action="#" method="post" onsubmit = "validate1(this)">
+        <form id="register-candidateForm" name="register-candidateForm" action="#" method="post">
           <fieldset> 
             <div class="formData">
-              <label class="register-field" for="fistName">First Name:</label>
-              <div class="register-value"><input class="register" type="text" size="60" value="" name="firstName" id="firstName"/></div>
+              <label class="register-field" for="firstName">First Name:</label>
+              <div class="register-value"><input class="register" type="text" size="60" name="firstName" id="firstName"/></div>
 
               <label class="register-field" for="middleName">Middle Name (optional):</label>
-              <div class="register-value"><input class="register" type="text" size="60" value="" name="middleName" id="middleName"/></div>
+              <div class="register-value"><input class="register" type="text" size="60" name="middleName" id="middleName"/></div>
 
               <label class="register-field" for="lastName">Last Name:</label>
-              <div class="register-value"><input class="register" type="text" size="60" value="" name="lastName" id="lastName"/></div>
+              <div class="register-value"><input class="register" type="text" size="60" name="lastName" id="lastName"/></div>
 
               <label class="register-field" for="birthday">Date of Birth:</label>
-              <div class="register-value"><input class="register" type="text" size="60" value="" name="birthday" id="birthday"/></div>
+              <div class="register-value"><input class="register" type="text" size="60" name="birthday" id="birthday"/></div>
 
-              <label class="register-field" for="email">Email:</label>
-              <div class="register-value"><input class="register" type="text" size="60" value="" name="email" id="email"/></div>
+              <label class="register-field" for="appEmail">Email:</label>
+              <div class="register-value"><input class="register" type="text" size="60" name="appEmail" id="appEmail"/></div>
 
               <label class="register-field" for="password">Password:</label>
-              <div class="register-value"><input class="register" type="text" size="60" value="" name="password" id="password"/></div>
+              <div class="register-value"><input class="register" type="password" size="60" name="appPassword" id="appPassword"/></div>
 
               <label class="register-field" for="rePassword">Retype Password:</label>
-              <div class="register-value"><input class="register" type="text" size="60" value="" name="rePassword" id="rePassword"/></div>
+              <div class="register-value"><input class="register" type="password" size="60" name="appRePassword" id="appRePassword"/></div>
 
               <label class="register-field" for="question">How did you hear about us: (optional)</label>
               <div class="value"><textarea rows="4" cols="33" name="question" id="question"></textarea></div>
@@ -100,28 +102,28 @@
 
       <div id="register-company">
         <div class="register-type">Company</div>
-        <form id="register-companyForm" name="register-companyForm" action="#" method="post" onsubmit = "validate2(this)">
+        <form id="register-companyForm" name="register-companyForm" action="#" method="post">
           <fieldset> 
             <div class="formData">
               <label class="register-field" for="id">ID (<a href="applyID.html">click to apply</a>):</label>
-              <div class="register-value"><input class="register" type="text" size="60" value="" name="id" id="id"/></div>
+              <div class="register-value"><input class="register" type="text" size="60" name="id" id="id"/></div>
 
               <label class="register-field" for="companyName">Name of company:</label>
-              <div class="register-value"><input class="register" type="text" size="60" value="" name="companyName" id="companyName"/></div>
+              <div class="register-value"><input class="register" type="text" size="60" name="companyName" id="companyName"/></div>
 
-              <label class="register-field" for="email">Email:</label>
-              <div class="register-value"><input class="register" type="text" size="60" value="" name="email" id="email"/></div>
+              <label class="register-field" for="companyEmail">Email:</label>
+              <div class="register-value"><input class="register" type="text" size="60" name="companyEmail" id="companyEmail"/></div>
 
               <label class="register-field" for="password">Password:</label>
-              <div class="register-value"><input class="register" type="text" size="60" value="" name="password" id="password"/></div>
+              <div class="register-value"><input class="register" type="password" size="60" name="companyPassword" id="companyPassword"/></div>
 
               <label class="register-field" for="rePassword">Retype Password:</label>
-              <div class="register-value"><input class="register" type="text" size="60" value="" name="rePassword" id="rePassword"/></div>
+              <div class="register-value"><input class="register" type="password" size="60" name="companyRePassword" id="companyRePassword"/></div>
 
               <label class="register-field" for="question">How did you hear about us: (optional)</label>
               <div class="value"><textarea rows="4" cols="33" name="question" id="question"></textarea></div>
 
-              <button id="register-applyID" onclick = "applyID()">Apply for an ID!</button>
+              <button id="register-applyID" onclick="window.location = 'applyID.html';">Apply for an ID!</button>
 
               <input type="submit" value="Register Now!" id="register-register" name="register"/>
             </div>
@@ -130,8 +132,8 @@
         </div>
       </div>
 
-      <div id = "register-login">
-      Already have an account? <u>Click to Login</u>
+      <div id="register-login">
+        Already have an account? <u>Click to Login</u>
       </div>
     </main>
 
