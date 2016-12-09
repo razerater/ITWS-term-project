@@ -44,6 +44,14 @@ header {
 	height: 100%;
 	padding-left: 25px;
 }
+#viewLink{
+	color: #89CFF0; 
+	text-decoration: none; 
+}
+#viewLink:hover{
+	text-decoration: none; 
+	color: red; 
+}
 #line {
 	position: absolute;
 	left: 20%;
