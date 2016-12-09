@@ -22,3 +22,6 @@ On most webpages, the user can:
 We used firebase to authenticate users and store user data.
 
 ![firebase](https://github.com/razerater/ITWS-term-project/blob/master/client/resources/images/db-model.GIF "Firebase database")
+
+## Presentation materials:
+https://docs.google.com/presentation/d/1uvCMAm7nd4SmA-5jiB-Gz9PLyjjY5WnnKaAyuOw6D9c
