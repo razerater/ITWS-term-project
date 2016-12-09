@@ -10,4 +10,4 @@ From here, if the user is an applicant, he/she can:
 
 ## Database model:
 We used firebase to authenticate users and store user data.
-![firebase](client/resources/images/db-model.gif "Firebase database")
+![firebase](https://github.com/razerater/ITWS-term-project/blob/master/client/resources/images/db-model.GIF "Firebase database")
