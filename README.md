@@ -20,4 +20,5 @@ On most webpages, the user can:
 
 ## Database model:
 We used firebase to authenticate users and store user data.
+
 ![firebase](https://github.com/razerater/ITWS-term-project/blob/master/client/resources/images/db-model.GIF "Firebase database")
