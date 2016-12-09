@@ -52,3 +52,16 @@ img.viewApp-profilePic{
 p.viewApp-link{
 	margin:0 0 10px 10px;
 }
+#return{
+	float: left; 
+	position: relative; 
+	left: 27%;
+	font-size: 2em; 
+	padding-top: 5%; 
+	color: #89CFF0; 
+	text-decoration: none; 
+}
+#return:hover{
+	text-decoration: none; 
+	color: red; 
+}
